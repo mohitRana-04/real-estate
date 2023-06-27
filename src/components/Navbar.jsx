@@ -1,11 +1,13 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
-import "./Navbar.css";
 
-const Navbar = () => {
-  const { user,loginWithRedirect,logout,isAuthenticated } = useAuth0();
+
+export function Navbar() {
+  const { user,loginWithPopup,logout,isAuthenticated } = useAuth0();
   return <>
+  <h1>NAVBAR</h1>
   <div className="list">
+
       {
         isAuthenticated && 
         <li><p className="para">Welcome , {user.name}</p></li>
@@ -17,7 +19,7 @@ const Navbar = () => {
           Log Out
         </button>
         </li>) : (<li>
-    <button onClick={() => loginWithRedirect()}>Log In</button>
+    <button onClick={() => loginWithPopup()}>Log In</button>
     </li>)
     }
     
@@ -26,4 +28,4 @@ const Navbar = () => {
   </>;
 };
 
-export default Navbar;
+

@@ -1,8 +1,8 @@
 import './App.css';
-import { Navbar } from './components/navbar';
+import { Navbar } from './components/Navbar';
 import { Router, Route, Switch } from "react-router-dom";
 
-import { Footer } from './components/footer';
+import { Footer } from './components/Footer';
 import Dashboard  from './components/dashboard';
 import { useAuth0 } from "@auth0/auth0-react";
 import {createBrowserHistory} from "history";

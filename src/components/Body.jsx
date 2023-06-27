@@ -1,11 +1,13 @@
 import React from "react";
-import ShowPost from "./Post-section/ShowPost";
+
 import Slider from "./Slider";
+import ShowPost from "./Firebase-Post/ShowPost";
 
 const Body = () => {
   return (
     <div>
       <Slider />
+      {/* <ShowPost /> */}
       <ShowPost />
     </div>
   );

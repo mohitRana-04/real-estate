@@ -36,37 +36,48 @@ const PostForm = () => {
   return (
     <div>
       {/* name */}
-      <input type="text" onChange={handleName} />
+      <input type="text" onChange={handleName} placeholder="Name" /> <br />
+      <br />
       {/* property name */}
-
-      <input type="text" onChange={handleProperty} />
+      <input
+        type="text"
+        onChange={handleProperty}
+        placeholder="Property Name"
+      />
+      <br />
+      <br />
       {/* property address */}
-      <input type="text" onChange={handleAddress} />
+      <input type="text" onChange={handleAddress} placeholder="Address" />{" "}
+      <br />
+      <br />
       {/* photo */}
-      <input type="file" onChange={handleImage} />
-
-      <button onClick={handleClick}>Post</button>
-
+      <input type="file" onChange={handleImage} placeholder="filee" /> <br />
+      <br />
+      <button onClick={handleClick} className="button-4">
+        Post
+      </button>
       {/* {image ? (
         <img src={URL.createObjectURL(image)} alt="" />
       ) : (
         <img src="" alt="" />
       )} */}
-
-      {form.map((item) => {
-        return (
-          <div>
-            <h3>{item.name}</h3>
-            <h1>{item.property}</h1>
-            {item.image ? (
-              <img src={URL.createObjectURL(item.image)} alt="" />
-            ) : (
-              <img src="" alt="" />
-            )}
-            <p>{item.description}</p>
-          </div>
-        );
-      })}
+      <div className="square">
+        {form.map((item) => {
+          return (
+            <div>
+              <div className="circle-pfp">{item.name[0]}</div>
+              <h3>{item.name}</h3>
+              <h1>{item.property}</h1>
+              {item.image ? (
+                <img src={URL.createObjectURL(item.image)} alt="" />
+              ) : (
+                <img src="" alt="" />
+              )}
+              <p>{item.description}</p>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 };

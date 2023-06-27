@@ -26,6 +26,44 @@ const ShowPost = () => {
   };
 
   useEffect(() => {
+    const uploadFiles = () => {
+      const fileName = new Date().getTime() + file.name;
+      console.log(fileName);
+      const storageRef = ref(storage, fileName);
+
+      const uploadTask = uploadBytesResumable(storageRef, fileName);
+
+      uploadTask.on(
+        "state_changed",
+        (snapshot) => {
+          const progress =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          console.log("Upload is " + progress + "% done");
+          switch (snapshot.state) {
+            case "paused":
+              console.log("Upload is paused");
+              break;
+            case "running":
+              console.log("Upload is running");
+              break;
+            default:
+              break;
+          }
+        },
+        (error) => {
+          console.log(error);
+        },
+        () => {
+          getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+            console.log("File available at", downloadURL);
+          });
+        }
+      );
+    };
+    file && uploadFiles();
+  }, [file]);
+
+  useEffect(() => {
     const getUsers = async () => {
       const data = await getDocs(userCollectionRef);
       setUser(data.docs.map((doc) => ({ ...doc.data(), id: doc.id })));

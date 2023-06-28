@@ -1,0 +1,10 @@
+.Landing{
+    background: url('../Assets/home.jpg') no-repeat center;
+    background-position: center;
+    background-size: cover;
+    height: 120vh;
+    position:relative;
+    margin-top:-30vh;
+    margin-left: -80px;
+    margin-right: -67px;
+}

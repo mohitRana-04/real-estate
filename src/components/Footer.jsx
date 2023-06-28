@@ -5,6 +5,7 @@ export function Footer() {
  
 
   return (
+<<<<<<< HEAD
     <>
     <div class="footer-container">
               <div class="footer-column">
@@ -56,5 +57,10 @@ export function Footer() {
 
             </>
 
+=======
+    <div>
+      <h1>FOOTE</h1>
+    </div>
+>>>>>>> dc2bc5c88fa4b92a66b13efa11c68e620e627e8a
   );
 }

@@ -1,12 +1,12 @@
 
-
+import "./footer.css";
 
 export function Footer() {
  
 
   return (
-<<<<<<< HEAD
     <>
+    <footer>
     <div class="footer-container">
               <div class="footer-column">
                 <h3>About Us</h3>
@@ -50,17 +50,12 @@ export function Footer() {
             </div>
             <div>
               <p>©2023 Property Paradise, All Rights Reserved.
-                <br>
+                <br/>
                 Web Design & Development by Wictronix | DMCA | PRIVACY POLICY
               </p>
             </div>
-
+            </footer>
             </>
 
-=======
-    <div>
-      <h1>FOOTE</h1>
-    </div>
->>>>>>> dc2bc5c88fa4b92a66b13efa11c68e620e627e8a
   );
 }

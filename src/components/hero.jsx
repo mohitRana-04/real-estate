@@ -14,7 +14,7 @@ export function HeroText() {
           <div className="aboutGrid">
             <div className="aboutGridText">
               <h2>We at WX Homes Provides.....</h2>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+              Lorem ipsum  sit amet consectetur adipisicing elit. Porro
               laudantium laboriosam quas non debitis. Rerum distinctio optio
               facilis nisi. Nam eligendi vitae voluptatem expedita minus
               repellat illo dolorem cum ipsa, totam, tempora debitis sit,

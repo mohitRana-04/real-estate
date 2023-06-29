@@ -283,6 +283,15 @@ align-self: center;
         color:blue
 	}
 	
+    .ContA{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1em;
+        background-color: #cdc7c776;
+        width:260px;
+    }
 
 	.box{
 		width: 250px;
@@ -290,6 +299,7 @@ align-self: center;
 		box-shadow: 0 0 20px 2px rgba(0, 0, 0, .1);
 		transition: 1s;
         justify-content: center;
+        border-radius: 1em;
 
 	}
 	.box img{
@@ -340,3 +350,69 @@ align-self: center;
         z-index: -1;
     }
 
+
+
+    /* We Handle */
+
+   .WeHand{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .WeHandtxt{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+   }
+      
+      
+      .heading1{
+        color: #FFA79F;
+        
+        position: relative;
+        font-size: 2.5vh;
+      }
+      .interior{
+        color: #443C54;
+        width: 400px;
+        display: inline-block;
+        margin-left: 5px;
+       
+      }
+      img{
+        width: 50%;
+      }
+      .get-started{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+        font-size: larger; 
+      }
+      .get-started1{
+        text-align: center;
+       margin-top: -25px;
+       
+      }
+      .buttons{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+      #button1{
+        background-color: #FFA79F;
+        color: #2F1D37;
+        border-radius: 5px;
+      }
+      #button2{
+        background-color: #2F1D37;
+        color: #FFA79F;
+        
+        margin-left: 5px;
+        border-radius: 5px;
+      }

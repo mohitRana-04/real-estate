@@ -58,94 +58,123 @@ export function HeroText() {
           <div className="item itemImg"></div>
         </div>
 
+
         <div className="Awesome3">
+
           <div class="containerAwesome">
-            <div class="box">
-              <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?cs=srgb&dl=pexels-dmitry-zvolskiy-2062426.jpg&fm=jpg" />
+
+            <div className="ContA">
+              <div class="box">
+                <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?cs=srgb&dl=pexels-dmitry-zvolskiy-2062426.jpg&fm=jpg" />
+              </div>
+              <div className="ServiceContDiv">
+                <div className="ServiceHead">Beautiful kitchen</div>
+                <div className="ServiceTxt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <button id="button">View home</button>
+              </div>
             </div>
-            <div class="box">
-              <img src="https://media.istockphoto.com/id/1136936441/photo/a-cozy-modern-kitchen-white-room-interior-3drender.jpg?s=612x612&w=0&k=20&c=jckG_WIKrb3oaMA6cdv35etCETZIBjoEcV3N2fHwA8s=" />
+
+            <div className="ContA">
+              <div class="box">
+                <img src="https://media.istockphoto.com/id/1136936441/photo/a-cozy-modern-kitchen-white-room-interior-3drender.jpg?s=612x612&w=0&k=20&c=jckG_WIKrb3oaMA6cdv35etCETZIBjoEcV3N2fHwA8s=" />
+              </div>
+              <div className="ServiceContDiv">
+                <div className="ServiceHead">Beautiful kitchen</div>
+                <div className="ServiceTxt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <button id="button">View home</button>
+              </div>
             </div>
-            <div class="box">
-              <img src="https://thumbs.dreamstime.com/b/beautiful-modern-kitchen-luxury-home-interior-island-large-stainless-steel-appliances-125640342.jpg" />
+
+            <div className="ContA">
+              <div class="box">
+                <img src="https://thumbs.dreamstime.com/b/beautiful-modern-kitchen-luxury-home-interior-island-large-stainless-steel-appliances-125640342.jpg" />
+              </div>
+              <div className="ServiceContDiv">
+                <div className="ServiceHead">Beautiful kitchen</div>
+                <div className="ServiceTxt">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                </div>
+                <button id="button">View home</button>
+              </div>
             </div>
-            <div class="box">
-              <img src="https://c4.wallpaperflare.com/wallpaper/907/470/444/white-kitchen-cabinets-kitchen-room-set-wallpaper-preview.jpg" />
-            </div>
-            <div class="box">
-              <img src="https://www.technocrazed.com/wp-content/uploads/2015/12/Kitchen-wallpaper-30.jpg" />
-            </div>
+
           </div>
 
-          <div className="ServicesCont">
-            <div className="ServiceContDiv">
-              <div className="ServiceHead">Beautiful kitchen</div>
-              <div className="ServiceTxt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+          <div id='abc'>
+            <div className="WeHand">
+              <div className="heading1">
+                <h1>We Handle Everything</h1>
+
               </div>
-              <button id="button">View home</button>
-            </div>
-
-            <div className="ServiceContDiv">
-              <div className="ServiceHead">Beautiful kitchen</div>
-              <div className="ServiceTxt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <div className="WeHandtxt">
+                <div className="interior">
+                  <img src='./Assets/ab.jpg' alt="Logo" />
+                  <h3>Home Appraisal</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
+                </div>
+                <div className="interior">
+                  <img src='./Assets/negotation.png' alt="Logo" />
+                  <h3>Price Negotation</h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
+                </div>
+                <div className="interior">
+                  <img src='./Assets/paperwork.png' alt="Logo" />
+                  <h3>Paperwork Handling </h3>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
+                </div>
               </div>
-              <button id="button">View home</button>
+            </div>
+            <div className="get-started">
+              <h1>Get Started</h1>
+            </div>
+            <div className="get-started1">
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Necessitatibus porro, nulla, nihil modi praesentium tenetur delectus laboriosam </p>
+            </div>
+            <div className="buttons">
+              <button id="button1">Explore Properties</button>
+              <button id="button2">Get Advice</button>
+
+
+
             </div>
 
-            <div className="ServiceContDiv">
-              <div className="ServiceHead">Beautiful kitchen</div>
-              <div className="ServiceTxt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+            <div className="reviewsCont">
+              <div class="containerAwesome2">
+                <div class="section">
+                  <text>
+                    I sold my house in just two weeks! Can't thank you enough
+                  </text>
+                  <p>Linda Harvey</p>
+                </div>
+                <div class="section">
+                  <text>Found my dream home in the city .Hassel-free!</text>
+                  <p>Tim Wilson</p>
+                </div>
+                <div class="section">
+                  <text>
+                    The buying process was smooth and easy. Highly recommended
+                  </text>
+                  <p>Gina Nguyen</p>
+                </div>
               </div>
-              <button id="button">View home</button>
-            </div>
 
-            <div className="ServiceContDiv">
-              <div className="ServiceHead">Beautiful kitchen</div>
-              <div className="ServiceTxt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
+              <div class="d-box">
+                <a href="css_div_image_hover.zip" class="btn">
+                  Properties
+                </a>
               </div>
-              <button id="button">View home</button>
             </div>
 
-            <div className="ServiceContDiv">
-              <div className="ServiceHead">Beautiful kitchen</div>
-              <div className="ServiceTxt">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit
-              </div>
-              <button id="button">View home</button>
-            </div>
-          </div>
 
-          <div class="containerAwesome2">
-            <div class="section">
-              <text>
-                I sold my house in just two weeks! Can't thank you enough
-              </text>
-              <p>Linda Harvey</p>
-            </div>
-            <div class="section">
-              <text>Found my dream home in the city .Hassel-free!</text>
-              <p>Tim Wilson</p>
-            </div>
-            <div class="section">
-              <text>
-                The buying process was smooth and easy. Highly recommended
-              </text>
-              <p>Gina Nguyen</p>
-            </div>
-          </div>
 
-          <div class="d-box">
-            <a href="css_div_image_hover.zip" class="btn">
-              Properties
-            </a>
+
+
           </div>
         </div>
-
-        <div className="WeHandle"></div>
       </div>
     </>
   );

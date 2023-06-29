@@ -337,5 +337,6 @@ align-self: center;
         margin-top:-30vh;
         margin-left: -80px;
         margin-right: -67px;
+        z-index: -1;
     }
 

@@ -168,7 +168,169 @@ export function HeroText() {
                 </a>
               </div>
             </div>
-
+  <div className="review" id="Review">
+        <h1>Customer's<span>review</span></h1>
+        <div className="review_box">
+          <div className="review_card">
+            <div className="card_top">
+              <div className="profile">
+                <div className="profile_image">
+                  <img src="image/girl_dp1.jpg" />
+                </div>
+                <div className="name">
+                  <strong>ABCDE</strong>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
+                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
+                repellat numquam atque dolores!
+              </p>
+            </div>
+          </div>   
+          <div className="review_card">
+            <div className="card_top">
+              <div className="profile">
+                <div className="profile_image">
+                  <img src="image/man_dp1.jpg" />
+                </div>
+                <div className="name">
+                  <strong>Sayuru Tharanga</strong>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                    <i className="fa-regular fa-star" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
+                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
+                repellat numquam atque dolores!
+              </p>
+            </div>
+          </div>   
+          <div className="review_card">
+            <div className="card_top">
+              <div className="profile">
+                <div className="profile_image">
+                  <img src="image/man_dp2.jpg" />
+                </div>
+                <div className="name">
+                  <strong>Senuda Dilwan</strong>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                    <i className="fa-regular fa-star" />
+                    <i className="fa-regular fa-star" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
+                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
+                repellat numquam atque dolores!
+              </p>
+            </div>
+          </div>   
+        </div>
+        <div className="review_box">
+          <div className="review_card">
+            <div className="card_top">
+              <div className="profile">
+                <div className="profile_image">
+                  <img src="image/gir_dp3.jpg" />
+                </div>
+                <div className="name">
+                  <strong>Kaveesha Vidurangi</strong>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                    <i className="fa-regular fa-star" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
+                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
+                repellat numquam atque dolores!
+              </p>
+            </div>
+          </div>   
+          <div className="review_card">
+            <div className="card_top">
+              <div className="profile">
+                <div className="profile_image">
+                  <img src="image/gir_dp2.jpg" />
+                </div>
+                <div className="name">
+                  <strong>John Deo</strong>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
+                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
+                repellat numquam atque dolores!
+              </p>
+            </div>
+          </div>   
+          <div className="review_card">
+            <div className="card_top">
+              <div className="profile">
+                <div className="profile_image">
+                  <img src="image/man_dp3.jpg" />
+                </div>
+                <div className="name">
+                  <strong>Charith Aruna</strong>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div className="comment">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
+                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
+                repellat numquam atque dolores!
+              </p>
+            </div>
+          </div>   
+        </div>
+      </div>
 
 
 

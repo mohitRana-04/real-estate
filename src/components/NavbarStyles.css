@@ -2,9 +2,14 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1b2430;
+    background: #423a4c ;
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    height: 1vh;
+    width:90vw;
+    margin-top:-52px;
+    position: absolute;
+    margin-left:-50px;
     
   }
   #navbar {
@@ -23,12 +28,12 @@ nav {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #fff;
+    color: #ffcebb;
     transition: 0.3s ease-in-out;
   }
   #navbar li a:hover,
   #navbar li a.active {
-    color: #17cf97;
+    color: #e1f2fb;
   }
   
   #navbar li a:hover::after,
@@ -36,7 +41,7 @@ nav {
     content: "";
     width: 30%;
     height: 2px;
-    background: #17cf97;
+    background:#ffcebb;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -47,7 +52,7 @@ nav {
   }
   
   #mobile i {
-    color: #fff;
+    color: #ffafa6;
     align-items: center;
   }
   
@@ -62,8 +67,8 @@ nav {
       right: -300px;
       width: 300px;
       height: 100vh;
-      background: #2a3239;
-      box-shadow: 0 40px 60px rgba(0, 0, 0, 0.1);
+      background: #5b5464;
+      box-shadow: 0 40px 60px rgba(108, 32, 222, 0.1);
       padding: 40px 0 0 10px;
       transition: 0.3s ease-in-out;
     }

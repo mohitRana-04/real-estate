@@ -3,12 +3,13 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import { Auth0Provider } from "@auth0/auth0-react";
-import {createBrowserHistory} from 'history';
+import { createBrowserHistory } from "history";
 import { getConfig } from "./config";
+import { BrowserRouter } from "react-router-dom";
 const history = createBrowserHistory();
 
 const onRedirectCallback = (appState) => {
-  console.log(window.location.pathname)
+  console.log(window.location.pathname);
   history.push(
     appState && appState.returnTo ? appState.returnTo : window.location.pathname
   );
@@ -24,13 +25,13 @@ const providerConfig = {
   onRedirectCallback,
 };
 
-
-
 const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
+  document.getElementById("root") as HTMLElement
 );
 root.render(
-  <Auth0Provider {...providerConfig}>
-    <App />
-  </Auth0Provider>
+  <BrowserRouter>
+    <Auth0Provider {...providerConfig}>
+      <App />
+    </Auth0Provider>
+  </BrowserRouter>
 );

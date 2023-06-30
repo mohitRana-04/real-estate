@@ -434,6 +434,12 @@ align-self: center;
 
 .review h1 span{
     background: linear-gradient(to left, #c72092 , #6c14d0);
+    font-size: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 15px;    
@@ -441,9 +447,8 @@ align-self: center;
 
 
 .review .review_box{
-    width: 95%;
+    width: 100%;
     position: relative;
-    top: 7%;
     display: flex;
     align-items: center;
     justify-content: center;

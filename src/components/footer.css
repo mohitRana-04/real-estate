@@ -2,7 +2,7 @@
 
 footer {
   top: 6000px;
-  background-color: pink;
+  background-color:#ffc2bc;
   color: black;
   padding: 20px 0;
   position: absolute;
@@ -11,7 +11,7 @@ footer {
 }
 
 .footer-container {
-  max-width: 1200px;
+  width: 1400px;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;

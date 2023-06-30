@@ -1,4 +1,9 @@
 import "./hero.css";
+import price from "./Assets/negotiation.png"
+import homeap from "./Assets/ab.png"
+import paper from "./Assets/paperwork.png"
+
+
 export function HeroText() {
   return (
     <>
@@ -112,17 +117,17 @@ export function HeroText() {
               </div>
               <div className="WeHandtxt">
                 <div className="interior">
-                  <img src='./Assets/ab.jpg' alt="Logo" />
+                <img src={homeap} alt="logo"/>
                   <h3>Home Appraisal</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
                 </div>
                 <div className="interior">
-                  <img src='./Assets/negotation.png' alt="Logo" />
+                <img src={price} alt= "logo"/>
                   <h3>Price Negotation</h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
                 </div>
                 <div className="interior">
-                  <img src='./Assets/paperwork.png' alt="Logo" />
+                <img src={paper} alt="logo"/>
                   <h3>Paperwork Handling </h3>
                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
                 </div>

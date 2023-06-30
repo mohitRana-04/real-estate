@@ -48,7 +48,7 @@ export function Footer() {
               
              
             </div>
-            <div>
+            <div className="footEnd">
               <p>©2023 Property Paradise, All Rights Reserved.
                 <br/>
                 Web Design & Development by Wictronix | DMCA | PRIVACY POLICY

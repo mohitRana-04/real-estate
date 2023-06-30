@@ -1,17 +1,17 @@
 
 
 footer {
-  top: 6000px;
+  
   background-color:#ffc2bc;
   color: black;
   padding: 20px 0;
-  position: absolute;
-  margin-top: 150vh;
+  position: relative;
+  margin-top: 40vh;
 
 }
 
 .footer-container {
-  width: 1400px;
+  width: 90vw;
   margin: 0 auto;
   display: flex;
   flex-wrap: wrap;
@@ -20,6 +20,11 @@ footer {
 
 .footer-column {
   flex-basis: 25%;
+
+}
+
+.footEnd{
+  width:80vw;
 }
 
 h3 {

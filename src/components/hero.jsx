@@ -108,241 +108,199 @@ export function HeroText() {
             </div>
 
           </div>
-
-          <div id='abc'>
-            <div className="WeHand">
-              <div className="heading1">
-                <h1>We Handle Everything</h1>
-
-              </div>
-              <div className="WeHandtxt">
-                <div className="interior">
-                <img src={homeap} alt="logo"/>
-                  <h3>Home Appraisal</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
-                </div>
-                <div className="interior">
-                <img src={price} alt= "logo"/>
-                  <h3>Price Negotation</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
-                </div>
-                <div className="interior">
-                <img src={paper} alt="logo"/>
-                  <h3>Paperwork Handling </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
-                </div>
-              </div>
-            </div>
-            <div className="get-started">
-              <h1>Get Started</h1>
-            </div>
-            <div className="get-started1">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Necessitatibus porro, nulla, nihil modi praesentium tenetur delectus laboriosam </p>
-            </div>
-            <div className="buttons">
-              <button id="button1">Explore Properties</button>
-              <button id="button2">Get Advice</button>
-
-
-
-            </div>
-
-            <div className="reviewsCont">
-              <div class="containerAwesome2">
-                <div class="section">
-                  <text>
-                    I sold my house in just two weeks! Can't thank you enough
-                  </text>
-                  <p>Linda Harvey</p>
-                </div>
-                <div class="section">
-                  <text>Found my dream home in the city .Hassel-free!</text>
-                  <p>Tim Wilson</p>
-                </div>
-                <div class="section">
-                  <text>
-                    The buying process was smooth and easy. Highly recommended
-                  </text>
-                  <p>Gina Nguyen</p>
-                </div>
-              </div>
-
-              <div class="d-box">
-                <a href="css_div_image_hover.zip" class="btn">
-                  Properties
-                </a>
-              </div>
-            </div>
-  <div className="review" id="Review">
-        <h1>Customer's<span>review</span></h1>
-        <div className="review_box">
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/girl_dp1.jpg" />
-                </div>
-                <div className="name">
-                  <strong>ABCDE</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/man_dp1.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Sayuru Tharanga</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                    <i className="fa-regular fa-star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/man_dp2.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Senuda Dilwan</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                    <i className="fa-regular fa-star" />
-                    <i className="fa-regular fa-star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
         </div>
-        <div className="review_box">
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/gir_dp3.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Kaveesha Vidurangi</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                    <i className="fa-regular fa-star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/gir_dp2.jpg" />
-                </div>
-                <div className="name">
-                  <strong>John Deo</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/man_dp3.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Charith Aruna</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-        </div>
-      </div>
 
+        <div id='abc'>
+          <div className="WeHand">
+            <div className="heading1">
+              <h1>We Handle Everything</h1>
+
+            </div>
+            <div className="WeHandtxt">
+              <div className="interior">
+                <img src={homeap} alt="logo" />
+                <h3>Home Appraisal</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
+              </div>
+              <div className="interior">
+                <img src={price} alt="logo" />
+                <h3>Price Negotation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
+              </div>
+              <div className="interior">
+                <img src={paper} alt="logo" />
+                <h3>Paperwork Handling </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
+              </div>
+            </div>
+          </div>
+          <div className="get-started">
+            <h1>Get Started</h1>
+          </div>
+          <div className="get-started1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Necessitatibus porro, nulla, nihil modi praesentium tenetur delectus laboriosam </p>
+          </div>
+          <div className="buttons">
+            <button id="button1">Explore Properties</button>
+            <button id="button2">Get Advice</button>
 
 
 
           </div>
+
+        </div>
+
+
+        <div className="review" id="Review">
+          <h1>Customer's<span>review</span></h1>
+          <div className="ReviewCont">
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src="image/girl_dp1.jpg" />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>ABCDE</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, laudantium non? Suscipit maiores aut officia molestias et unde veritatis minus?
+              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src="image/girl_dp1.jpg" />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>ABCDE</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, laudantium non? Suscipit maiores aut officia molestias et unde veritatis minus?
+              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src="image/girl_dp1.jpg" />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>ABCDE</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, laudantium non? Suscipit maiores aut officia molestias et unde veritatis minus?
+              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src="image/girl_dp1.jpg" />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>ABCDE</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, laudantium non? Suscipit maiores aut officia molestias et unde veritatis minus?
+              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src="image/girl_dp1.jpg" />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>ABCDE</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, laudantium non? Suscipit maiores aut officia molestias et unde veritatis minus?
+              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src="image/girl_dp1.jpg" />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>ABCDE</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, laudantium non? Suscipit maiores aut officia molestias et unde veritatis minus?
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </>
   );
 }

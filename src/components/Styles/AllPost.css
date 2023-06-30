@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+.whole {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+
+    /* height: 100%; */
+    display: flex;
+    justify-content: center;
+}
+
+.text-container {
+    /* height: 500px; */
+    width: 50%;
+    /* border: 1px solid black; */
+
+}
+
+.form-container {
+    height: 40%;
+    width: 35%;
+    border: 0.2px solid black;
+    box-shadow: 0 8px 8px rgba(255, 167, 159, 0.4);
+    border-radius: 7px;
+}
+
+.header-container {
+    margin: 0px;
+    padding: 0rem;
+    text-align: start;
+    justify-content: left;
+    text-shadow: 20px;
+}
+
+.header-container h1 {
+    margin-bottom: 0cm;
+    padding-bottom: 0cm;
+    text-shadow: 10cm;
+}
+
+.header-container ul {
+    margin-left: 0cm;
+    justify-content: left;
+
+}
+
+.form {
+    padding-top: 4rem;
+    padding-left: 2rem;
+}
+
+li {
+    font-weight: 500;
+}
+
+.center-container {
+    /* display: flex; */
+    /* justify-content: center; */
+    padding: 1rem;
+    height: 200px;
+    text-align: center;
+}
+
+.three-container {
+    display: flex;
+    justify-content: left;
+
+}
+
+.details {
+
+    width: 30%;
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.upload {
+    width: 30%;
+
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.pricing {
+
+    width: 30%;
+    /* border: 1px solid black; */
+    height: auto;
+}
+
+.light-text {
+    font-weight: 5000;
+
+
+    color: rgb(150, 148, 148);
+}
+
+.center-container h1 {
+    font-weight: 5000;
+
+}
+
+
+.container1 {
+    justify-content: left;
+    align-items: start;
+    padding-left: 0px;
+}
+
+.container1 h3 {
+    align-items: left;
+    justify-content: left;
+    padding: 0;
+    margin-left: 0cm;
+    margin-bottom: 0cm;
+}
+
+.container1 p {
+    background-color: white;
+    font-weight: 100;
+    align-items: start;
+    justify-content: left;
+}
+
+.container1 b {
+    color: rgb(191, 130, 160);
+}
+
+.icons {
+    height: 50px;
+    padding: 0px;
+    margin-bottom: 0px;
+    margin-left: 30px;
+}

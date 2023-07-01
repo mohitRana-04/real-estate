@@ -34,7 +34,7 @@ export function HeroText() {
 
         <div className="containerFindDreams">
           <div className="item itemHead">
-            <h1>Find Your Dream House</h1>
+            <h1 id="findhead">Find Your Dream House</h1>
           </div>
 
           <div className="item">

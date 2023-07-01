@@ -20,10 +20,46 @@ body{
 }
 
 .aboutHead h1{
+  color: rgb(162, 4, 4);
+  font-size: 70px;
     font-size: 5.5vh;
     margin-bottom: -3vh;
+    animation: bounce 3s infinite;
+  }
+@keyframes bounce {
+from,
+20%,
+53%,
+to {
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 0, 0);
 }
 
+40%,
+43% {
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transform: translate3d(0, -30px, 0) scaleY(1.1);
+}
+
+70% {
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transform: translate3d(0, -15px, 0) scaleY(1.05);
+}
+
+80% {
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 0, 0) scaleY(0.95);
+}
+
+90% {
+  transform: translate3d(0, -4px, 0) scaleY(1.02);
+}
+}
+
+.bounce {
+animation-name: bounce;
+transform-origin: center bottom;
+}
 
 
 
@@ -107,6 +143,14 @@ body{
 
 .item h1{
     margin:0 0;
+    font-size: 30px;
+}
+
+#findhead
+{
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 137);
 }
 
 .itemHead {
@@ -117,9 +161,9 @@ body{
 }
 
 .itemImg {
-    background-image: url("./Assets/finddreamImage.png");
+    background-image: url("./Assets/finddreamImage.jpg");
     width: 100%;
-    height: auto;
+    height: 100%;
     object-position: left;
     border-top-left-radius: 2vh;
     border-top-right-radius: 13vh;
@@ -427,7 +471,7 @@ align-self: center;
       
       
       .heading1{
-        color: #FFA79F;
+        color: #a76862;
         
         position: relative;
         font-size: 2.5vh;

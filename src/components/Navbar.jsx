@@ -5,6 +5,7 @@ import "./NavbarStyles.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import AllPost from "./AllPost";
 import Dashboard from "./dashboard";
+import logo from "./Assets/logo.png"
 
 class Navbar extends Component {
   state = { clicked: false };

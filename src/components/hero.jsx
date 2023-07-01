@@ -2,7 +2,7 @@ import "./hero.css";
 import price from "./Assets/negotiation.png"
 import homeap from "./Assets/ab.png"
 import paper from "./Assets/paperwork.png"
-
+import tag from "./tag"
 
 export function HeroText() {
   return (
@@ -10,6 +10,7 @@ export function HeroText() {
       <div className="main">
         <div className="Landing"></div>
         <div>
+          
           <div className="aboutHead">
             <h1>About Us</h1>
 
@@ -33,7 +34,7 @@ export function HeroText() {
 
         <div className="containerFindDreams">
           <div className="item itemHead">
-            <h1>Find Your Dream House</h1>
+            <h1 id="findhead">Find Your Dream House</h1>
           </div>
 
           <div className="item">

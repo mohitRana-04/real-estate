@@ -6,20 +6,20 @@
   
   .tagline h4 {
     font-size: 30px;
-    color: #fcbebe;
+    color: #000000;
     font-weight: bolder;
   }
   
   .tagline p {
     font-size: 16px;
-    color: #f5c7c7;
+    color: #000000;
     font-weight: bolder;
   }
   
-  button {
+  .buttontag {
     margin-top: 600px;
     text-align: center;
-    background-color: #f5c7c7;
+    background-color: #000000;
     color: black;
     margin-left: 400px;
   }

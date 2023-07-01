@@ -2,8 +2,10 @@
 
 footer {
   
-  background-color:#ffc2bc;
-  color: black;
+  background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: black;
   padding: 20px 0;
   position: relative;
   margin-top: 40vh;
@@ -50,11 +52,11 @@ i{
   font-variant: small-caps;
   
 }
-p{
+#footerpara{
 background-color: gray;
 color: black;
 height: 90px;
-width: 100%;
+width: 110%;
 text-align: center;
 padding-top: 40px;
 margin: 0px;

@@ -49,7 +49,7 @@ export function Footer() {
              
             </div>
             <div className="footEnd">
-              <p>©2023 Property Paradise, All Rights Reserved.
+              <p id="footerpara">©2023 Property Paradise, All Rights Reserved.
                 <br/>
                 Web Design & Development by Wictronix | DMCA | PRIVACY POLICY
               </p>

@@ -13,8 +13,6 @@ export function HeroText() {
           
           <div className="aboutHead">
             <h1>About Us</h1>
-
-            <h4>Who are we?</h4>
           </div>
 
           <div className="aboutGrid">
@@ -143,7 +141,6 @@ export function HeroText() {
           </div>
           <div className="buttons">
             <button id="button1">Explore Properties</button>
-            <button id="button2">Get Advice</button>
 
 
 

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "slick-carousel/slick/slick-theme.css";
 import { db, storage } from "../firebase-config";
 import { collection, getDocs, addDoc } from "firebase/firestore";
@@ -15,8 +15,10 @@ import { fas } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faImages, faHome, faFileAlt } from "@fortawesome/free-solid-svg-icons";
 import Testimonials from "./File/Testimonials";
+import "./Styles/AllPost.css";
 
 import { Data } from "./File/Data";
+import { Center } from "@mantine/core";
 
 library.add(fas);
 
@@ -34,6 +36,7 @@ function AllPost() {
   const userCollectionRef = collection(db, "posts");
 
   const handleButton = async () => {
+    alert("Post Update kindly refresh");
     await addDoc(userCollectionRef, {
       name: name,
       description: description,
@@ -104,11 +107,14 @@ function AllPost() {
         <div className="container">
           <div className="text-container">
             <div className="header-container">
-              <h1>
-                Post your <span>Property</span> with
-              </h1>
-              <h1>with BTW- 2</h1>
-              <ul>
+              <h1 style={{ fontSize: "50px" }}>
+                Post your{" "}
+                <span style={{ color: "rgb(157, 127, 127)" }}>Property</span>{" "}
+                with
+              </h1>{" "}
+              <h1 style={{ fontSize: "40px" }}>with BTW- 2</h1> <br />
+              <br />
+              <ul style={{ fontSize: "30px" }}>
                 <li>
                   <b style={{ color: "rgb(157, 127, 127)" }}>01.</b>Advertise
                   for free
@@ -131,8 +137,15 @@ function AllPost() {
 
           <div className="form-container">
             <form onSubmit={handleButton} className="form">
-              <h2>Start Posting your real estate</h2>
-              <p>start adding basic details</p> <br />
+              <h2 style={{ fontSize: "30px", fontWeight: 600 }}>
+                Start Posting your real estate
+              </h2>
+              <p
+                style={{ fontSize: "20px", fontWeight: 400, letterSpacing: 1 }}
+              >
+                start adding basic details
+              </p>{" "}
+              <br />
               <input
                 type="file"
                 onChange={(e) => {
@@ -164,15 +177,17 @@ function AllPost() {
                 placeholder="name"
               />
               <br /> <br />
-              <button type="submit">Post</button>
+              <button className="button-3" type="submit">
+                Post
+              </button>
             </form>
           </div>
         </div>
         <div>
           <div className="center-container">
             <h2 className="light-text">HOW TO POST</h2>
-            <h1> POST YOUR PROPERTY IN </h1>
-            <h1>3 SIMPLE STEPS</h1>
+            <h1 style={{ fontSize: "40px" }}> POST YOUR PROPERTY IN </h1>
+            <h1 style={{ fontSize: "30px" }}>3 SIMPLE STEPS</h1>
           </div>
           <div className="three-container">
             <div className="details">
@@ -215,8 +230,10 @@ function AllPost() {
           <div className="additional-benifit">
             <h3 className="cotainer1-css">
               <b style={{ fontWeight: 100 }}>Additional Benifits</b>
-              <h1> Everything on Realestate does to post </h1>
-              <h1>your rent out property</h1>
+              <h1 style={{ fontSize: "50px" }}>
+                Everything on Realestate does to post{" "}
+              </h1>
+              <h1 style={{ fontSize: "50px" }}>your rent out property</h1>
               <h2 style={{ fontWeight: 300 }}>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -225,9 +242,8 @@ function AllPost() {
                 survived not only five centuries,{" "}
               </h2>
             </h3>
-
-            <Testimonials />
           </div>
+          <Testimonials />
         </div>
       </div>
     </>

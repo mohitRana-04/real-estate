@@ -1,4 +1,12 @@
-.card-1 {
-    height: auto;
-    width: 400px;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
+
+.card-2 {
+    border-radius: 20px;
+    /* height: auto; */
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
 }

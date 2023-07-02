@@ -6,6 +6,7 @@ import { Auth0Provider } from "@auth0/auth0-react";
 import { createBrowserHistory } from "history";
 import { getConfig } from "./config";
 import { BrowserRouter } from "react-router-dom";
+// import "bootstrap/dist/css/bootstrap.min.css";
 const history = createBrowserHistory();
 
 const onRedirectCallback = (appState) => {

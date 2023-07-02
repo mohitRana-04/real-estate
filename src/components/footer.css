@@ -1,23 +1,34 @@
 footer {
+<<<<<<< HEAD
   top: 6000px;
   background-color: #ffc2bc;
   color: black;
+=======
+  
+ background-color:rgb(247, 245, 245);
+    color: black;
+>>>>>>> 1bbfef1968cb8063b79081254bf984a5f87019ba
   padding: 20px 0;
-  position: absolute;
-  margin-top: 150vh;
+  position: relative;
+  margin-top: 40vh;
 
 }
 
 .footer-container {
-  width: 1400px;
-  margin: 0 auto;
+  width: 70vw;
+  margin: -10px 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
 .footer-column {
-  flex-basis: 25%;
+  flex-basis: 15%;
+
+}
+
+.footEnd{
+  width:80vw;
 }
 
 h3 {
@@ -33,8 +44,13 @@ ul {
 }
 
 li {
+<<<<<<< HEAD
   margin-bottom: 5px;
 
+=======
+  margin-bottom: -10px;
+ 
+>>>>>>> 1bbfef1968cb8063b79081254bf984a5f87019ba
 }
 
 i {
@@ -43,6 +59,7 @@ i {
   font-variant: small-caps;
 
 }
+<<<<<<< HEAD
 
 p {
   /* background-color: gray; */
@@ -53,6 +70,17 @@ p {
   padding-top: 40px;
   margin: 0px;
   font-weight: bolder;
+=======
+#footerpara{
+background-color: gray;
+color: black;
+height: 90px;
+width: 110%;
+text-align: center;
+padding-top: 40px;
+margin: -5px;
+font-weight: bolder;
+>>>>>>> 1bbfef1968cb8063b79081254bf984a5f87019ba
 
 
 }

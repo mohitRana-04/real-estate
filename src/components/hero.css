@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 
+
+body{
+  background: #d9a7c7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+
 .aboutHead {
    
     justify-content: center;
@@ -13,10 +20,46 @@
 }
 
 .aboutHead h1{
+  color: rgb(162, 4, 4);
+  font-size: 70px;
     font-size: 5.5vh;
     margin-bottom: -3vh;
+    animation: bounce 3s infinite;
+  }
+@keyframes bounce {
+from,
+20%,
+53%,
+to {
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 0, 0);
 }
 
+40%,
+43% {
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transform: translate3d(0, -30px, 0) scaleY(1.1);
+}
+
+70% {
+  animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  transform: translate3d(0, -15px, 0) scaleY(1.05);
+}
+
+80% {
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  transform: translate3d(0, 0, 0) scaleY(0.95);
+}
+
+90% {
+  transform: translate3d(0, -4px, 0) scaleY(1.02);
+}
+}
+
+.bounce {
+animation-name: bounce;
+transform-origin: center bottom;
+}
 
 
 
@@ -47,20 +90,34 @@
     width: 50vw;
     background-repeat: no-repeat;
     background-clip: border-box;
-
+    animation: slideInLeft 4s infinite;
 }
+@keyframes slideInLeft {
+    from {
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      transform: translate3d(20%, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    animation-name: slideInLeft;
+  }
 
 .aboutGridText {
+  font-size: 20px;
     grid-column-start: 2;
     grid-column-end: 3;
     width: 28vw;
     height: 70vh;
     position: absolute;
     top: 0;
-    right: 10vw;
     align-content: center;
     color:#2F1D37;
-
+    animation: moverSombraRosa 6s infinite;
 }
 
 /* FindStyle.css */
@@ -69,9 +126,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: repeat(4, 1fr);
-    
+    margin-top: 30px;
     column-gap: 5vw;
-    font-size: 2vh;
+    
     
 
 }
@@ -86,6 +143,50 @@
 
 .item h1{
     margin:0 0;
+    font-size: 30px;
+}
+
+#findhead
+{
+  margin-left: 10px;
+  font-size: 50px;
+  margin-bottom: 20px;
+  color: rgb(0, 0, 137);
+  animation: bounce 3s infinite;
+}
+@keyframes bounce {
+from,
+20%,
+53%,
+to {
+animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+transform: translate3d(0, 0, 0);
+}
+
+40%,
+43% {
+animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+transform: translate3d(0, -30px, 0) scaleY(1.1);
+}
+
+70% {
+animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+transform: translate3d(0, -15px, 0) scaleY(1.05);
+}
+
+80% {
+transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+transform: translate3d(0, 0, 0) scaleY(0.95);
+}
+
+90% {
+transform: translate3d(0, -4px, 0) scaleY(1.02);
+}
+}
+
+.bounce {
+animation-name: bounce;
+transform-origin: center bottom;
 }
 
 .itemHead {
@@ -96,9 +197,9 @@
 }
 
 .itemImg {
-    background-image: url("./Assets/finddreamImage.png");
+    background-image: url("./Assets/finddreamImage.jpg");
     width: 100%;
-    height: auto;
+    height: 100%;
     object-position: left;
     border-top-left-radius: 2vh;
     border-top-right-radius: 13vh;
@@ -110,8 +211,33 @@
     grid-row-end: 5;
     padding-top: 2vh;
     padding-bottom: 2vh;
+    animation: jackInTheBox 6s infinite ;
 
 }
+@keyframes jackInTheBox {
+    from {
+      opacity: 50;
+      transform: scale(0.5) rotate(30deg);
+      transform-origin: center bottom;
+    }
+  
+    50% {
+      transform: rotate(-10deg);
+    }
+  
+    70% {
+      transform: rotate(3deg);
+    }
+  
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  .jackInTheBox {
+    animation-name: jackInTheBox;
+  }
 #tophead{
     margin: 0%;
 }
@@ -207,7 +333,6 @@
 .Awesome3{
 height:100vh;
     
-background-color: rgb(245, 244, 243);
 align-self: center;
 }
 
@@ -221,29 +346,9 @@ align-self: center;
       margin-bottom:-9vh;
     }
     
-    .section {
-      flex-basis: 30%;
-     min-width: 300px;
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-      background-color: #cdc7c7;
-      margin: 10px;
-      padding: 20px;
-      box-sizing: border-box;
-      border-radius: 8px;
-      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-     
-    }
     
-    .section text{
-        justify-content: center;
-        
-      height:70px;
-      
-
-    }
-
+    
+    
     .ServicesCont{
         width:80vw;
         height: 50vh;
@@ -273,15 +378,7 @@ align-self: center;
     /* color: #24a0ed; */
    
 
-	.containerAwesome2{
-		width: 96%;
-		padding: 20px;
-		margin: 0 0;	 
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-        color:blue
-	}
+	
 	
     .ContA{
         display: flex;
@@ -354,11 +451,14 @@ align-self: center;
 
     /* We Handle */
 
+   
    .WeHand{
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-left: 24px ;
+    
    }
 
    .WeHandtxt{
@@ -366,12 +466,50 @@ align-self: center;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-left: 10px;
 
    }
-      
-      
+   #abc h1{
+    font-size: 70px;
+    animation: bounce 3s infinite;
+}
+@keyframes bounce {
+from,
+20%,
+53%,
+to {
+animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+transform: translate3d(0, 0, 0);
+}
+
+40%,
+43% {
+animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+transform: translate3d(0, -30px, 0) scaleY(1.1);
+}
+
+70% {
+animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+transform: translate3d(0, -15px, 0) scaleY(1.05);
+}
+
+80% {
+transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+transform: translate3d(0, 0, 0) scaleY(0.95);
+}
+
+90% {
+transform: translate3d(0, -4px, 0) scaleY(1.02);
+}
+}
+
+.bounce {
+animation-name: bounce;
+transform-origin: center bottom;
+}
+  
       .heading1{
-        color: #FFA79F;
+        color: #a76862;
         
         position: relative;
         font-size: 2.5vh;
@@ -379,8 +517,10 @@ align-self: center;
       .interior{
         color: #443C54;
         width: 400px;
-        display: inline-block;
-        margin-left: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: -15px;
        
       }
       img{
@@ -409,13 +549,12 @@ align-self: center;
         color: #2F1D37;
         border-radius: 5px;
       }
-      #button2{
+      #button1:hover{
         background-color: #2F1D37;
         color: #FFA79F;
-        
-        margin-left: 5px;
-        border-radius: 5px;
+        border-radius: 5px;
       }
+ 
 
       .review{
     width: 100%;
@@ -430,98 +569,150 @@ align-self: center;
     justify-content: center;
     margin-bottom: 30px;
     text-transform: uppercase;
+    margin-right: 250px;
 }
 
 .review h1 span{
     background: linear-gradient(to left, #c72092 , #6c14d0);
-    font-size: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-    text-transform: uppercase;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 15px;    
 }
-
-
-.review .review_box{
-    width: 100%;
+      
+      
+      .review{
+    
+    height: 100vh;
+   
+    
+    width:100vw ;
     position: relative;
     display: flex;
+    flex-direction: column;
+   margin-right: 10vw;
     align-items: center;
     justify-content: center;
-    margin: 0 auto;
+    margin-top:30vh;
+    
 }
 
 
-.review .profile .profile_image{
-    width: 60px;
-    height: 60px;
+
+.review h1{
+    font-size: 60px;
+    text-transform: uppercase;
+}
+
+
+
+
+
+.ReviewCont{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 15vw;
+    align-items: center;
+    height:100vh;
+    
+}
+
+
+.review_card{
+    width: 23vw;
+    background: #f3f1f1;
+    
+    border-radius: 5px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items :center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border: 2px solid #2F1D37;
+}
+.review_card:hover{
+    background: #FFA79F;
+scale: 1.1;
+
+}
+
+
+.card_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:25vw;
+    padding-top:0;
+}
+
+
+.review  .profile_image{
+    width: 70px;
+    height:70px;
+    margin-left:auto;
+    margin-right:auto;
     border-radius: 50%;
     overflow: hidden;
-    margin: 5px 0;
+   
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
     cursor: pointer;
     transition: 0.3s;
 }
 
-.review .profile .profile_image:hover{
+.review  .profile_image:hover{
     transform: scale(1.2);
 }
 
 .review .profile_image img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
-    object-position: center;
+    object-fit:contain;
+    margin-right: 200px;
+    margin-bottom: 400px;
 }
 
-.review .profile{
+
+
+
+
+.profileNameArea{
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    ;
+    margin-left:auto;
+    margin-right:auto;
+    padding:0
 }
-
-.review .review_box .review_card{
-    width: 500px;
-    background: #f3f1f1;
-    padding: 20px 25px;
-    border-radius: 5px;
-    margin: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-.review .review_box .review_card:hover{
-    width: 500px;
-    background: #FFA79F;
-    padding: 20px 25px;
-    border-radius: 5px;
-    margin: 15px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.review .review_box .review_card .card_top{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.review .review_box .review_card .card_top .profile .name{
+.profileNameArea .name{
     margin-left: 20px;
-    line-height: 22px;
+    line-height: 2px;
 }
 
-.review .review_box .review_card .card_top .profile .name strong{
+.name strong{
     font-size: 20px;
 }
 
-.review .review_box .review_card .card_top .profile .name .like i{
-    color: orange;
-    display: inline-block;
-    font-size: 12px;
+.like{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width:8vw;
+    color: #2F1D37;
+
 }
 
-.review .review_box .review_card .comment p{
+.like i{
+    display: inline-block;
+    font-size: 22px;
+    padding:0;
+    margin-right:0px
+
+}
+
+.reviewComment{
     text-align: justify;
     line-height: 22px;
     margin-top: 15px;

@@ -2,7 +2,13 @@ import "./hero.css";
 import price from "./Assets/negotiation.png"
 import homeap from "./Assets/ab.png"
 import paper from "./Assets/paperwork.png"
-
+import tag from "./tag"
+import girldp1 from "./Assets/girl_dp1.jpg"
+import girldp2 from "./Assets/gir_dp2.jpg"
+import girldp3 from "./Assets/gir_dp3.jpg"
+import mandp1 from "./Assets/man_dp1.jpg"
+import mandp2 from "./Assets/man_dp2.jpg"
+import mandp3 from "./Assets/man_dp3.jpg"
 
 export function HeroText() {
   return (
@@ -10,20 +16,15 @@ export function HeroText() {
       <div className="main">
         <div className="Landing"></div>
         <div>
+          
           <div className="aboutHead">
             <h1>About Us</h1>
-
-            <h4>Who are we?</h4>
           </div>
 
           <div className="aboutGrid">
             <div className="aboutGridText">
               <h2>We at WX Homes Provides.....</h2>
-              Lorem ipsum  sit amet consectetur adipisicing elit. Porro
-              laudantium laboriosam quas non debitis. Rerum distinctio optio
-              facilis nisi. Nam eligendi vitae voluptatem expedita minus
-              repellat illo dolorem cum ipsa, totam, tempora debitis sit,
-              ratione aliquam nostrum magni! In, dolorum.
+              Your one-stop destination for real estate needs. Browse our extensive property listings, refine searches, and take virtual tours. Connect directly with buyers, sellers, and expert agents using our secure messaging system. Benefit from our knowledgeable agents, neighborhood insights, and financial tools. Mobile-responsive for on-the-go access. Privacy and security are paramount. Begin your real estate journey with WXHomes today!
             </div>
             <div className="aboutGridImg"></div>
           </div>
@@ -33,31 +34,22 @@ export function HeroText() {
 
         <div className="containerFindDreams">
           <div className="item itemHead">
-            <h1>Find Your Dream House</h1>
+            <h1 id="findhead">Find Your Dream House</h1>
           </div>
 
           <div className="item">
             <h1>Buyer's Guide</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
-            quaerat ad illo, voluptatum quam, molestiae beatae facere
-            reprehenderit, deserunt saepe eum temporibus error incidunt.
-            Eligendi.
+         Get Expert Advice on Purchasing Property Like a Pro!
           </div>
 
           <div className="item">
-            <h1>Buyer's Guide</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
-            quaerat ad illo, voluptatum quam, molestiae beatae facere
-            reprehenderit, deserunt saepe eum temporibus error incidunt.
-            Eligendi.
+            <h1>Seller's Guide</h1>
+           Maximize your Property's potential with our Valuable Tips!
           </div>
 
           <div className="item">
-            <h1>Buyer's Guide</h1>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
-            quaerat ad illo, voluptatum quam, molestiae beatae facere
-            reprehenderit, deserunt saepe eum temporibus error incidunt.
-            Eligendi.
+            <h1>Property Tours</h1>
+           Explore Breathtaking Homes in Stunning Settings!
           </div>
 
           <div className="item itemImg"></div>
@@ -108,241 +100,196 @@ export function HeroText() {
             </div>
 
           </div>
-
-          <div id='abc'>
-            <div className="WeHand">
-              <div className="heading1">
-                <h1>We Handle Everything</h1>
-
-              </div>
-              <div className="WeHandtxt">
-                <div className="interior">
-                <img src={homeap} alt="logo"/>
-                  <h3>Home Appraisal</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
-                </div>
-                <div className="interior">
-                <img src={price} alt= "logo"/>
-                  <h3>Price Negotation</h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
-                </div>
-                <div className="interior">
-                <img src={paper} alt="logo"/>
-                  <h3>Paperwork Handling </h3>
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium placeat tempora voluptatem neque laborum mollitia inventore harum magni sint aliquam error, excepturi et quibusdam!</p>
-                </div>
-              </div>
-            </div>
-            <div className="get-started">
-              <h1>Get Started</h1>
-            </div>
-            <div className="get-started1">
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br /> Necessitatibus porro, nulla, nihil modi praesentium tenetur delectus laboriosam </p>
-            </div>
-            <div className="buttons">
-              <button id="button1">Explore Properties</button>
-              <button id="button2">Get Advice</button>
-
-
-
-            </div>
-
-            <div className="reviewsCont">
-              <div class="containerAwesome2">
-                <div class="section">
-                  <text>
-                    I sold my house in just two weeks! Can't thank you enough
-                  </text>
-                  <p>Linda Harvey</p>
-                </div>
-                <div class="section">
-                  <text>Found my dream home in the city .Hassel-free!</text>
-                  <p>Tim Wilson</p>
-                </div>
-                <div class="section">
-                  <text>
-                    The buying process was smooth and easy. Highly recommended
-                  </text>
-                  <p>Gina Nguyen</p>
-                </div>
-              </div>
-
-              <div class="d-box">
-                <a href="css_div_image_hover.zip" class="btn">
-                  Properties
-                </a>
-              </div>
-            </div>
-  <div className="review" id="Review">
-        <h1>Customer's<span>review</span></h1>
-        <div className="review_box">
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/girl_dp1.jpg" />
-                </div>
-                <div className="name">
-                  <strong>ABCDE</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/man_dp1.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Sayuru Tharanga</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                    <i className="fa-regular fa-star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/man_dp2.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Senuda Dilwan</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                    <i className="fa-regular fa-star" />
-                    <i className="fa-regular fa-star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
         </div>
-        <div className="review_box">
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/gir_dp3.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Kaveesha Vidurangi</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                    <i className="fa-regular fa-star" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/gir_dp2.jpg" />
-                </div>
-                <div className="name">
-                  <strong>John Deo</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-          <div className="review_card">
-            <div className="card_top">
-              <div className="profile">
-                <div className="profile_image">
-                  <img src="image/man_dp3.jpg" />
-                </div>
-                <div className="name">
-                  <strong>Charith Aruna</strong>
-                  <div className="like">
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star" />
-                    <i className="fa-solid fa-star-half-stroke" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="comment">
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis, amet nesciunt voluptatem cum 
-                architecto ipsum vero nulla voluptatibus dolorum modi assumenda eum? Aliquid inventore velit ipsa 
-                repellat numquam atque dolores!
-              </p>
-            </div>
-          </div>   
-        </div>
-      </div>
 
+        <div id='abc'>
+          <div className="WeHand">
+            <div className="heading1">
+              <h1>We Handle Everything</h1>
+
+            </div>
+            <div className="WeHandtxt">
+              <div className="interior">
+                <img src={homeap} alt="logo" />
+                <h3>Home Appraisal</h3>
+                <p>we understand the significance of accurate home valuations. Our team of experienced and certified appraisers meticulously assesses various factors that influence the value of your property. From the location and size of your home to its condition and recent market trends, we leave no stone unturned.</p>
+              </div>
+              <div className="interior">
+                <img src={price} alt="logo" />
+                <h3>Price Negotation</h3>
+                <p> we believe in advocating for our clients and ensuring they get the most out of their real estate investments. Our skilled negotiators have extensive experience in the industry, and we are committed to securing the most favorable terms for you. We leverage our in-depth market knowledge and strategic approach to engage in price negotiations that align with your goals. </p>
+              </div>
+              <div className="interior">
+                <img src={paper} alt="logo" />
+                <h3>Paperwork Handling </h3>
+                <p> we understand the importance of handling paperwork accurately and efficiently. Our experienced team takes care of drafting, reviewing, and submitting all necessary documents, ensuring compliance with regulations and minimizing risks. Trust us to handle your real estate paperwork seamlessly, guiding you through the process for a smooth and successful transaction.</p>
+              </div>
+            </div>
+          </div>
+          <div className="get-started">
+            <h1>Get Started</h1>
+          </div>
+          <div className="get-started1">
+            <p>Don't wait to invest in your Dream Property! <br /> Explore Our Website or Contact our experts agent for your real estate needs. </p>
+          </div>
+          <div className="buttons">
+            <button id="button1">Explore Properties</button>
 
 
 
           </div>
+
+        </div>
+
+
+        <div className="review" id="Review">
+          <h1>Customer's<span>review</span></h1>
+          <div className="ReviewCont">
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src={mandp3} />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>Sparsh</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+              ""WXHomes is an incredible real estate website. It offers an intuitive user interface, making property searches and navigation a breeze. The detailed property information and high-quality images provide a clear understanding of each listing. It's a reliable and efficient platform for finding your dream home."
+
+</div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src={girldp1} />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>Kanika</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+              "I highly recommend WXHomes for anyone looking to buy or sell real estate. The website offers a wide range of listings, and the search filters help narrow down options based on specific preferences. The responsive customer support team is always ready to assist and provide valuable guidance throughout the process."              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src={mandp1} />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>Mohit</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+              WXHomes is my go-to website for finding rental properties. The platform is user-friendly, and the rental listings are regularly updated. The ability to schedule virtual tours and the comprehensive property descriptions save time and make the rental search hassle-free. If you're looking for a rental, give WXHomes a try              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src={girldp3} />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>Neha</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+              I highly recommend WXHomes for real estate needs. Its wide range of listings and search filters help narrow down options based on preferences. The responsive customer support team offers valuable guidance throughout the process."           </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src={mandp2} />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>Piyush</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+              "WXHomes is my go-to website for rental properties. regularly updated listings make the rental search hassle-free. Virtual tours and comprehensive property descriptions save time. Give WXHomes a try for an easy rental search."
+              </div>
+            </div>
+
+            <div className="review_card">
+
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src={girldp2} />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>Sakshi</strong>
+                  </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
+                  </div>
+                </div>
+              </div>
+              <div className="reviewComment">
+              WXHomes made selling my property a great experience. The seamless listing process and marketing tools helped attract potential buyers quickly. Thanks to WXHomes, I sold my property efficiently and with peace of mind."
+              </div>
+            </div>
+          </div>
         </div>
       </div>
+
     </>
   );
 }

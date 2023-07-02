@@ -49,13 +49,14 @@ class Navbar extends Component {
                 fill="#1F84EF"
               ></path>{" "}
             </svg>
+            <p className="wxHomes">Wx Homes</p>
           </a>
           <div>
             <ul
               id="navbar"
               className={this.state.clicked ? "#navbar active" : "#navbar"}
             >
-              <Link to="/post">All Post</Link>
+              <Link className="alPo" to="/post">Explore</Link>
               {isAuthenticated && (
                 <li>
                   <p className="para">Welcome , {user.name}</p>
@@ -64,7 +65,7 @@ class Navbar extends Component {
 
               {isAuthenticated ? (
                 <li>
-                  <button
+                  <button className="but"
                     onClick={() =>
                       logout({
                         logoutParams: { returnTo: window.location.origin },
@@ -76,7 +77,7 @@ class Navbar extends Component {
                 </li>
               ) : (
                 <li>
-                  <button onClick={() => loginWithRedirect()}>Log In</button>
+                  <button className="but" onClick={() => loginWithRedirect()}>Log In</button>
                 </li>
               )}
             </ul>

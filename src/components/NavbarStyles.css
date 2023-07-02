@@ -1,21 +1,19 @@
 nav {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background: #423a4c ;
-    padding: 20px 80px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
-    height: 1vh;
-    width:90vw;
-    margin-top:-52px;
-    position: absolute;
-    margin-left:-50px;
-    
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white(0, 0, 0, 0.5);
+  padding: 5px 80px;
+  box-shadow: 0 5px 15px rgba(133, 133, 133, 0.06);
+  height: 7vh;
+  width: 90vw;
+  position: relative;  
+}
+
+
   #navbar {
     display: flex;
     align-items: center;
-    justify-content: center;
   }
   
   #navbar li {
@@ -46,7 +44,6 @@ nav {
     bottom: -4px;
     left: 20px;
   }
-  
   #mobile {
     display: none;
   }
@@ -90,4 +87,62 @@ nav {
       cursor: pointer;
     }
   }
+
+
+
+  ul .but {
+      margin-bottom: 1vh;
+      border: 2px solid rgb(254, 219, 196);
+      padding: 5px 8px;
+      font-size: large;
+      font-weight:600;
+  }
+
+  ul .but:hover {
+    background-color: rgb(85, 0, 0);
+    color: rgb(254, 219, 196);
+    transition: .5s;
+    cursor: pointer;
+}
+
+
+ul .alPo {
+  color: white;
+  font-size: larger;
+  font-weight: 600;
+  text-decoration: none;
+  position: relative;
+  margin-right: 20px;
+}
+
+ul .alPo::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 0;
+  height: 2px;
+  background-color: white;
+  transition: width 0.3s ease;
+}
+
+ul .alPo:hover::after {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+#logo-16 {
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.wxHomes {
+  color: rgb(123, 20, 20);
+  font-size: x-large;
+  font-weight: 750;
   
+}

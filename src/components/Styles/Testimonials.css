@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap');
 
 .card-2 {
+    margin: 2rem;
+    padding: 2rem;
     border-radius: 20px;
     /* height: auto; */
     font-family: 'Poppins', sans-serif;
@@ -8,5 +10,27 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid black;
+    background-color: white;
+    /* border: 1px solid black; */
+
+}
+
+.cutomer {
+    animation-duration: 8s;
+    animation-name: slidein;
+    /* animation-iteration-count: infinite; */
+}
+
+@keyframes slidein {
+    0% {
+        margin-left: 0%;
+    }
+
+    50% {
+        margin-left: 300px;
+    }
+
+    100% {
+        margin-left: 0%;
+    }
 }

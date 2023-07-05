@@ -7,30 +7,37 @@
 
 }
 
+
+
+
 .container {
+    padding: 1rem;
 
     background-repeat: no-repeat;
-    object-fit: cover;
+    /* object-fit: cover; */
 
     /* height: 100%; */
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    /* justify-content: center; */
+    /* object-fit: cover; */
 }
 
 .text-container {
+    margin-left: 60px;
     /* height: 500px; */
-    width: 50%;
+    /* width: 50%; */
     /* border: 1px solid black; */
 
 }
 
 .form-container {
-    height: 40%;
+    /* height: 40%; */
+    margin-right: 2rem;
     /* justify-content: center; */
     align-items: center;
-    width: 35%;
-    border: 0.2px solid black;
+    /* width: 35%; */
+    border: 0.1px solid white;
     box-shadow: 5px 5px 5px 5px rgba(255, 167, 159, 0.4);
     border-radius: 7px;
 }
@@ -47,6 +54,7 @@
     margin-bottom: 0cm;
     padding-bottom: 0cm;
     text-shadow: 10cm;
+    text-align: left;
 }
 
 .header-container ul {
@@ -57,8 +65,12 @@
 
 .form {
     justify-content: center;
-    /* padding-top: 4rem;
-    padding-left: 1rem; */
+    padding: 1rem;
+
+}
+
+.form input {
+    outline: none;
 }
 
 li {
@@ -73,29 +85,44 @@ li {
     text-align: center;
 }
 
+.space-div {
+    /* padding-left: 5px; */
+}
+
 .three-container {
-    display: flex;
-    justify-content: left;
+    padding: 5rem;
+    /* display: flex; */
+    /* justify-content: left; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    /* justify-content: center; */
+    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
+    /* margin-left: 5rem; */
+
 
 }
 
 .details {
-
-    width: 30%;
+    /* padding: 1rem; */
+    /* background-color: white; */
+    width: 80%;
     /* border: 1px solid black; */
     height: auto;
 }
 
-.upload {
-    width: 30%;
 
+
+.upload {
+    width: 80%;
+    /* background-color: white; */
     /* border: 1px solid black; */
     height: auto;
 }
 
 .pricing {
 
-    width: 30%;
+    /* background-color: white; */
+    width: 80%;
     /* border: 1px solid black; */
     height: auto;
 }
@@ -115,10 +142,10 @@ li {
 
 
 .container1 {
-    background-color: white;
+
     justify-content: left;
     align-items: start;
-    padding-left: 0px;
+    padding: 1rem;
 }
 
 .container1 h3 {
@@ -140,6 +167,12 @@ li {
     color: rgb(191, 130, 160);
 }
 
+.container1-css {
+    display: flex;
+    justify-content: center;
+
+}
+
 .icons {
     height: 50px;
     padding: 0px;
@@ -150,10 +183,27 @@ li {
 input {
     margin: 0.5rem 0;
     padding: 0.5rem;
-    width: 300px;
+    width: 75%;
     border: 1px solid #ccc;
     border-radius: 4px;
 }
+
+.textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 75%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 4rem;
+}
+
+input:focus {
+    color: red;
+    transform: translateX(10px) translateY(-7px);
+    font-size: 1rem;
+}
+
+.container1-css {}
 
 /* CSS */
 .button-3 {
@@ -205,4 +255,17 @@ input {
 .button-3:active {
     background-color: #298e46;
     box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
+}
+
+.additional-benifit {
+    padding: 6rem
+}
+
+@media screen and (max-width: 400px) {
+    .header-container {
+        float: none;
+        margin-right: 0;
+        width: auto;
+        border: 0;
+    }
 }

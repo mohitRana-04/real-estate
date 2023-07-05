@@ -18,7 +18,7 @@ import Testimonials from "./File/Testimonials";
 import "./Styles/AllPost.css";
 
 import { Data } from "./File/Data";
-import { Center } from "@mantine/core";
+import { Center, Textarea } from "@mantine/core";
 
 library.add(fas);
 
@@ -103,34 +103,40 @@ function AllPost() {
 
   return (
     <>
+      <br />
+      <br />
       <div className="whole">
         <div className="container">
           <div className="text-container">
             <div className="header-container">
               <h1 style={{ fontSize: "50px" }}>
-                Post your{" "}
-                <span style={{ color: "rgb(157, 127, 127)" }}>Property</span>{" "}
+                Post your
+                <span style={{ color: "rgb(157, 127, 127)" }}> Property </span>
                 with
               </h1>{" "}
-              <h1 style={{ fontSize: "40px" }}>with BTW- 2</h1> <br />
+              <h1 style={{ fontSize: "30px" }}>with BTW- 2</h1> <br />
               <br />
-              <ul style={{ fontSize: "30px" }}>
+              <ul style={{ fontSize: "20px" }}>
                 <li>
                   <b style={{ color: "rgb(157, 127, 127)" }}>01.</b>Advertise
                   for free
-                </li>
+                </li>{" "}
+                <br />
                 <li>
                   <b style={{ color: "rgb(157, 127, 127)" }}>02.</b>get
                   unlimited enqueries
-                </li>
+                </li>{" "}
+                <br />
                 <li>
                   <b style={{ color: "rgb(157, 127, 127)" }}>03.</b>get
                   shorlisted buyer
-                </li>
+                </li>{" "}
+                <br />
                 <li>
                   <b style={{ color: "rgb(157, 127, 127)" }}>04.</b>Assistance
                   in coordinating
                 </li>
+                <br />
               </ul>
             </div>
           </div>
@@ -159,15 +165,20 @@ function AllPost() {
                   setName(e.target.value);
                 }}
                 placeholder="estate"
+                required
               />
+              {/* <span>estate</span> */}
               <br /> <br />
               <input
+                className="textarea"
                 type="text"
                 onChange={(e) => {
                   setDescription(e.target.value);
                 }}
                 placeholder="description"
+                required
               />
+              {/* <span>description</span> */}
               <br /> <br />
               <input
                 type="text"
@@ -175,7 +186,9 @@ function AllPost() {
                   setEstate(e.target.value);
                 }}
                 placeholder="name"
+                required
               />
+              {/* <span>name</span> */}
               <br /> <br />
               <button className="button-3" type="submit">
                 Post
@@ -183,7 +196,7 @@ function AllPost() {
             </form>
           </div>
         </div>
-        <div>
+        <div className="space-div">
           <div className="center-container">
             <h2 className="light-text">HOW TO POST</h2>
             <h1 style={{ fontSize: "40px" }}> POST YOUR PROPERTY IN </h1>
@@ -202,6 +215,7 @@ function AllPost() {
                 </p>
               </div>
             </div>
+
             <div className="upload">
               <FontAwesomeIcon icon={faImages} className="icons" />
               <div className="container1">
@@ -241,9 +255,10 @@ function AllPost() {
                 of type and scrambled it to make a type specimen book. It has
                 survived not only five centuries,{" "}
               </h2>
-            </h3>
+            </h3>{" "}
+            <br /> <br /> <br />
+            <Testimonials />
           </div>
-          <Testimonials />
         </div>
       </div>
     </>

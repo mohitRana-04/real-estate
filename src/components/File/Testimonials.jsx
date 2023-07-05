@@ -21,13 +21,17 @@ export default class SimpleSlider extends Component {
       infinite: true,
       speed: 500,
       slidesToShow: 3,
-      slidesToScroll: 3,
+      slidesToScroll: 1,
     };
 
     return (
       <div>
         <b style={{ fontWeight: 100 }}>Testimonials</b>
-        <h1 style={{ fontSize: "50px" }}>What Customers Says about us</h1>
+        <h1 className="cutomer" style={{ fontSize: "50px" }}>
+          What Customers Says about us
+        </h1>{" "}
+        <br />
+        <br />
         <Slider {...settings}>
           {Data.map((item) => {
             const imageUrl = `https://picsum.photos/20${item.id}`;
@@ -35,9 +39,9 @@ export default class SimpleSlider extends Component {
             return (
               <>
                 <div className="card-2">
-                  <img style={{ borderRadius: "50%" }} src={imageUrl} alt="" />
-                  {/* <span>{item.place}</span> */}
+                  <img src={imageUrl} alt="" />
 
+                  <h2>Some Title</h2>
                   <h4 style={{ fontWeight: 300 }}>{item.text}</h4>
                   <h3 style={{ letterSpacing: 2 }}>{item.name}</h3>
                 </div>

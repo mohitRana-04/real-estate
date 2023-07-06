@@ -92,19 +92,7 @@ transform-origin: center bottom;
 
 }
 
-.aboutGridImg {
-    background-image: url("./Assets/about.png");
-    grid-column-start: 1;
-    grid-column-end: 2;
 
-    position: absolute;
-    top: 0px;
-    height: 64.5vh;
-    width: 50vw;
-    background-repeat: no-repeat;
-    background-clip: border-box;
-    animation: slideInLeft 4s infinite;;
-}
 @keyframes slideInLeft {
     from {
       transform: translate3d(-100%, 0, 0);
@@ -212,25 +200,7 @@ transform-origin: center bottom;
     margin: auto;
 }
 
-.itemImg {
-    background-image: url("./Assets/finddreamImage.jpg");
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-    object-position: left;
-    border-top-left-radius: 2vh;
-    border-top-right-radius: 13vh;
-    border-bottom-right-radius: 2vh;
-    border-bottom-left-radius: 13vh;
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 5;
-    padding-top: 2vh;
-    padding-bottom: 2vh;
-    animation: jackInTheBox 6s infinite ;
 
-}
 @keyframes jackInTheBox {
     from {
       opacity: 50;
@@ -316,7 +286,7 @@ transform-origin: center bottom;
     box-sizing: border;
 
 }
-.background{
+/* .background{
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -326,7 +296,6 @@ transform-origin: center bottom;
 
 .background ::before{
     content: '';
-    background-image: url(https://i.pinimg.com/550x/61/e9/47/61e947525f963d18058c05570859e49e.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center ;
@@ -337,7 +306,7 @@ transform-origin: center bottom;
     right: 0;
     opacity: 0.35;
 
-}
+} */
 .Awesome3 {
   width: 200vh;
   display: flex;
@@ -346,6 +315,7 @@ transform-origin: center bottom;
   justify-content: center;
   height: 95vh;
   margin-bottom: 17vh;
+  margin-top: 10vh;
 }
 
 .heading {
@@ -353,8 +323,8 @@ transform-origin: center bottom;
 }
 
 .heading p{
-  font-size: 50px;
-  font-weight: 800;
+  /* font-size: 50px; */
+  /* font-weight: 800; */
   border-bottom: 3px solid black;
 }
 
@@ -681,14 +651,34 @@ h1 span {
 }
 
 
-
-.Landing {
-  background: url('./Assets/home.jpg') no-repeat center;
-  background-position: center;
-  background-size: cover;
-  height: 90vh;
+.Landing{
   position: relative;
-  margin-top: 1.25vh; /* Adjust the value as needed */
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Set the aspect ratio of the image, e.g., 16:9 */
+  overflow: hidden;
+}
+
+.overlay-text {
+  position: absolute;
+  z-index: 1;
+ top: 3%;
+ left: 15%;
+ font-size: 3vw;
 
 }
 
+
+.image-overlay {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("./Assets/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+}

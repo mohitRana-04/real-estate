@@ -1,0 +1,14 @@
+.but {
+    margin-bottom: 1vh;
+    border: 2px solid rgb(254, 219, 196);
+    padding: 5px 8px;
+    font-size: large;
+    font-weight:600;
+}
+
+.but:hover {
+  background-color: rgb(85, 0, 0);
+  color: rgb(254, 219, 196);
+  transition: .5s;
+  cursor: pointer;
+}

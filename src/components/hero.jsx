@@ -2,107 +2,47 @@ import "./hero.css";
 import price from "./Assets/negotiation.png";
 import homeap from "./Assets/ab.png";
 import paper from "./Assets/paperwork.png";
-import tag from "./tag";
+import { Typewriter, Cursor } from "react-simple-typewriter";
 import girldp1 from "./Assets/girl_dp1.jpg";
 import girldp2 from "./Assets/gir_dp2.jpg";
 import girldp3 from "./Assets/gir_dp3.jpg";
 import mandp1 from "./Assets/man_dp1.jpg";
 import mandp2 from "./Assets/man_dp2.jpg";
 import mandp3 from "./Assets/man_dp3.jpg";
-
+import Featured from "./featured/Featured";
+import Team from "./Team/Team";
+import Awards from "./Awards/Awards";
 export function HeroText() {
   return (
     <>
       <div className="main">
-        <div className="Landing"></div>
+        <div className="Landing">
+          <div className="image-overlay"></div>
+          <h1 className="overlay-text" style={{ margin: "50px" }}>
+            <span style={{ color: "black" }}>
+              <Typewriter
+                words={["Exceptional Service, Extraordinary Results."]}
+                loop={5}
+                typeSpeed={100}
+                deleteSpeed={90}
+                delaySpeed={1000}
+              />
+            </span>
+
+            <span>
+              <Cursor />
+            </span>
+          </h1>
+        </div>
+
         <div>
-          <div className="aboutHead">
-            <h1>About Us</h1>
-          </div>
-
-          <div className="aboutGrid">
-            <div className="aboutGridText">
-              <h2>We at WX Homes Provides.....</h2>
-              Your one-stop destination for real estate needs. Browse our
-              extensive property listings, refine searches, and take virtual
-              tours. Connect directly with buyers, sellers, and expert agents
-              using our secure messaging system. Benefit from our knowledgeable
-              agents, neighborhood insights, and financial tools.
-              Mobile-responsive for on-the-go access. Privacy and security are
-              paramount. Begin your real estate journey with WXHomes today!
-            </div>
-            <div className="aboutGridImg"></div>
-          </div>
+          <Featured />
         </div>
-
-        {/* //something */}
-
-        <div className="containerFindDreams">
-          <div className="item itemHead">
-            <h1 id="findhead">Find Your Dream House</h1>
-          </div>
-
-          <div className="item">
-            <h1>Buyer's Guide</h1>
-            Get Expert Advice on Purchasing Property Like a Pro!
-          </div>
-
-          <div className="item">
-            <h1>Seller's Guide</h1>
-            Maximize your Property's potential with our Valuable Tips!
-          </div>
-
-          <div className="item">
-            <h1>Property Tours</h1>
-            Explore Breathtaking Homes in Stunning Settings!
-          </div>
-
-          <div className="item itemImg"></div>
+        <div>
+          <Awards/>
         </div>
-        <div className="Awesome3">
-          <div className="heading">
-            <p>Discover Your Dream Home with a Click!</p>
-          </div>
-          <div class="containerAwesome">
-            <div className="ContA">
-              <div class="box">
-                <img src="https://images.pexels.com/photos/2062426/pexels-photo-2062426.jpeg?cs=srgb&dl=pexels-dmitry-zvolskiy-2062426.jpg&fm=jpg" />
-              </div>
-              <div className="ServiceContDiv">
-                <div className="ServiceHead">Beautiful kitchen</div>
-                <div className="ServiceTxt">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-                <button id="button">View</button>
-              </div>
-            </div>
-
-            <div className="ContA">
-              <div class="box">
-                <img src="https://media.istockphoto.com/id/1136936441/photo/a-cozy-modern-kitchen-white-room-interior-3drender.jpg?s=612x612&w=0&k=20&c=jckG_WIKrb3oaMA6cdv35etCETZIBjoEcV3N2fHwA8s=" />
-              </div>
-              <div className="ServiceContDiv">
-                <div className="ServiceHead">Beautiful kitchen</div>
-                <div className="ServiceTxt">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-                <button id="button">View</button>
-              </div>
-            </div>
-
-            <div className="ContA">
-              <div class="box">
-                <img src="https://thumbs.dreamstime.com/b/beautiful-modern-kitchen-luxury-home-interior-island-large-stainless-steel-appliances-125640342.jpg" />
-              </div>
-              <div className="ServiceContDiv">
-                <div className="ServiceHead">Beautiful kitchen</div>
-                <div className="ServiceTxt">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit
-                </div>
-                <button id="button">View</button>
-              </div>
-            </div>
-          </div>
+        <div>
+          <Team />
         </div>
 
         <div id="abc">
@@ -251,7 +191,6 @@ export function HeroText() {
               search hassle-free. If you're looking for a rental, give WXHomes a
               try{" "}
             </div>
-          
 
             <div className="review_card">
               <div className="card_top">
@@ -271,10 +210,10 @@ export function HeroText() {
                   </div>
                 </div>
               </div>
-                I highly recommend WXHomes for real estate needs. Its wide range
-                of listings and search filters help narrow down options based on
-                preferences. The responsive customer support team offers valuable
-                guidance throughout the process."{" "}
+              I highly recommend WXHomes for real estate needs. Its wide range
+              of listings and search filters help narrow down options based on
+              preferences. The responsive customer support team offers valuable
+              guidance throughout the process."{" "}
             </div>
 
             <div className="review_card">
@@ -295,38 +234,35 @@ export function HeroText() {
                   </div>
                 </div>
               </div>
-              
-                "WXHomes is my go-to website for rental properties. regularly
-                updated listings make the rental search hassle-free. Virtual tours
-                and comprehensive property descriptions save time. Give WXHomes a
-                try for an easy rental search."
-              
-              </div>
+              "WXHomes is my go-to website for rental properties. regularly
+              updated listings make the rental search hassle-free. Virtual tours
+              and comprehensive property descriptions save time. Give WXHomes a
+              try for an easy rental search."
+            </div>
 
-              <div className="review_card">
-                <div className="card_top">
-                  <div className="profile_image">
-                    <img src={girldp2} />
+            <div className="review_card">
+              <div className="card_top">
+                <div className="profile_image">
+                  <img src={girldp2} />
+                </div>
+                <div className="profileNameArea">
+                  <div className="name">
+                    <strong>Sakshi</strong>
                   </div>
-                  <div className="profileNameArea">
-                    <div className="name">
-                      <strong>Sakshi</strong>
-                    </div>
-                    <div className="like">
-                      <i className="fa-solid fa-star" />
-                      <i className="fa-solid fa-star" />
-                      <i className="fa-solid fa-star" />
-                      <i className="fa-solid fa-star" />
-                      <i className="fa-solid fa-star-half-stroke" />
-                    </div>
+                  <div className="like">
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star" />
+                    <i className="fa-solid fa-star-half-stroke" />
                   </div>
                 </div>
-                
-                  WXHomes made selling my property a great experience. The seamless
-                  listing process and marketing tools helped attract potential
-                  buyers quickly. Thanks to WXHomes, I sold my property efficiently
-                  and with peace of mind."
-                </div>
+              </div>
+              WXHomes made selling my property a great experience. The seamless
+              listing process and marketing tools helped attract potential
+              buyers quickly. Thanks to WXHomes, I sold my property efficiently
+              and with peace of mind."
+            </div>
           </div>
         </div>
       </div>

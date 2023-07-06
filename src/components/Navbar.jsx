@@ -3,9 +3,7 @@ import { withAuth0 } from "@auth0/auth0-react";
 import { Component } from "react";
 import "./NavbarStyles.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import AllPost from "./AllPost";
-import Dashboard from "./dashboard";
-import logo from "./Assets/logo.png"
+
 
 class Navbar extends Component {
   state = { clicked: false };
@@ -18,7 +16,7 @@ class Navbar extends Component {
     return (
       <>
         <nav>
-          <a href="index.html">
+          <Link to="/">
             <svg
               id="logo-16"
               width="109"
@@ -50,13 +48,17 @@ class Navbar extends Component {
               ></path>{" "}
             </svg>
             <p className="wxHomes">Wx Homes</p>
-          </a>
+          </Link>
           <div>
             <ul
               id="navbar"
               className={this.state.clicked ? "#navbar active" : "#navbar"}
             >
-              <Link className="alPo" to="/post">Explore</Link>
+              <li>
+              <Link className="alPo" to="/">Home</Link>
+              </li>
+             <li> <Link className="alPo" to="/post">Post</Link></li>
+             <li> <Link className="alPo" to="/explore">Explore</Link></li>
               {isAuthenticated && (
                 <li>
                   <p className="para">Welcome , {user.name}</p>

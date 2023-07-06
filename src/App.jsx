@@ -1,17 +1,15 @@
 import "./components/Styles/App.css";
 import Navbar from "./components/Navbar";
-import { Router, Route, Switch } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-import { Footer } from "./components/Footer";
+import Footer from "./components/Footer";
 import Dashboard from "./components/dashboard";
 import { useAuth0 } from "@auth0/auth0-react";
-import { createBrowserHistory } from "history";
 import { HeroText } from "./components/hero";
 import Loading from "./components/Loading";
 import { Profile } from "./components/profile";
 import AllPost from "./components/AllPost";
-
-const history = createBrowserHistory();
+import Mapp from "./components/Mapp"
 
 function App() {
   const { isLoading, error, isAuthenticated } = useAuth0();
@@ -23,8 +21,9 @@ function App() {
   if (isLoading) {
     return <Loading />;
   }
+
   return (
-    <Router history={history}>
+    <Router>
       <Navbar />
       <Switch>
         <Route
@@ -33,11 +32,12 @@ function App() {
           component={isAuthenticated ? Dashboard : HeroText}
         />
         <Route path="/post" component={AllPost} />
-        <Route path="/profile" component={Profile} />
+        <Route path="/explore" component={Mapp} />
+
         <Route
           path="*"
           component={() => {
-            return <div>404 , PAGE NOT FOUND</div>;
+            return <div>404, PAGE NOT FOUND</div>;
           }}
         />
       </Switch>

@@ -1,61 +1,43 @@
-
+import React from "react";
 import "./footer.css";
 
-export function Footer() {
- 
-
+const Footer = () => {
   return (
-    <>
-    <footer>
-    <div class="footer-container">
-              <div class="footer-column">
-                <h3>About Us</h3>
-                <ul>
-                  <li>About Company</li>
-                  <li>Our Team</li>
-                  <li>Contact Us</li>
-                  <li>Careers</li>
-                </ul>
-              </div>
-              <div class="footer-column">
-                <h3>Services</h3>
-                <ul>
-                  <li>Buy Properties</li>
-                  <li>Sell Properties</li>
-                  <li>Rent Properties</li>
-                  <li>Property Management</li>
-                </ul>
-              </div>
-              <div class="footer-column">
-                <h3>Resources</h3>
-                <ul>
-                  <li>Blog</li>
-                  <li>FAQs</li>
-                  <li>Guides & Tips</li>
-                  <li>Terms of Service</li>
-                  <li>Privacy Policy</li>
-                </ul>
-              </div>
-              <div class="footer-column">
-                <h3>Follow Us</h3>
-                <ul>
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                </ul>
-              </div>
-              
-             
+    <footer className="footer">
+      <div className="container">
+        <div className="footer-content">
+          <div className="footer-column">
+            <h3>About Us</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div className="footer-column">
+            <h3>Contact Us</h3>
+            <p>Email: example@example.com</p>
+            <p>Phone: 123-456-7890</p>
+          </div>
+          <div className="footer-column">
+            <h3>Follow Us</h3>
+            <div className="social-icons">
+              <a href="https://www.facebook.com">
+                <i className="fab fa-facebook"></i>
+              </a>
+              <a href="https://www.twitter.com">
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com">
+                <i className="fab fa-instagram"></i>
+              </a>
             </div>
-            <div className="footEnd">
-              <p id="footerpara">©2023 Property Paradise, All Rights Reserved.
-                <br/>
-                Web Design & Development by Wictronix | DMCA | PRIVACY POLICY
-              </p>
-            </div>
-            </footer>
-            </>
-
+          </div>
+        </div>
+      </div>
+      <div className="footer-bottom">
+        <div className="container">
+          <p>&copy; {new Date().getFullYear()} Your Website. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
   );
-}
+};
+
+export default Footer;

@@ -26,12 +26,12 @@ nav {
     text-decoration: none;
     font-size: 1.3rem;
     font-weight: 600;
-    color: #ffcebb;
+    /* color: #ffcebb; */
     transition: 0.3s ease-in-out;
   }
   #navbar li a:hover,
   #navbar li a.active {
-    color: #e1f2fb;
+    color: white
   }
   
   #navbar li a:hover::after,
@@ -39,7 +39,7 @@ nav {
     content: "";
     width: 30%;
     height: 2px;
-    background:#ffcebb;
+    background:white;
     position: absolute;
     bottom: -4px;
     left: 20px;
@@ -145,4 +145,7 @@ a {
   font-size: x-large;
   font-weight: 750;
   
+}
+.alPo{
+  color: white;
 }

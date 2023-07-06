@@ -77,5 +77,16 @@
   }
 
   button{
-    background-color: rgb(89, 228, 89);
+    background-color:#FFD59F;
+  }
+
+  .container h1{
+    color:#423A4C;
+  }
+
+  .box3 h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #FFD59F;
   }

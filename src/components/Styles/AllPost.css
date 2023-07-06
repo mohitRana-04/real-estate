@@ -14,29 +14,21 @@
     padding: 1rem;
 
     background-repeat: no-repeat;
-    /* object-fit: cover; */
-
-    /* height: 100%; */
+    
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
-    /* justify-content: center; */
-    /* object-fit: cover; */
 }
 
 .text-container {
     margin-left: 60px;
-    /* height: 500px; */
-    /* width: 50%; */
-    /* border: 1px solid black; */
+    
 
 }
 
 .form-container {
-    /* height: 40%; */
+   
     margin-right: 2rem;
-    /* justify-content: center; */
     align-items: center;
-    /* width: 35%; */
     border: 0.1px solid white;
     box-shadow: 5px 5px 5px 5px rgba(255, 167, 159, 0.4);
     border-radius: 7px;
@@ -85,28 +77,21 @@ li {
     text-align: center;
 }
 
-.space-div {
-    /* padding-left: 5px; */
-}
 
 .three-container {
     padding: 5rem;
-    /* display: flex; */
-    /* justify-content: left; */
+  
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    /* justify-content: center; */
-    /* grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); */
-    /* margin-left: 5rem; */
+   
 
 
 }
 
 .details {
-    /* padding: 1rem; */
-    /* background-color: white; */
+   
     width: 80%;
-    /* border: 1px solid black; */
+    
     height: auto;
 }
 
@@ -114,25 +99,21 @@ li {
 
 .upload {
     width: 80%;
-    /* background-color: white; */
-    /* border: 1px solid black; */
+ 
     height: auto;
 }
 
 .pricing {
 
-    /* background-color: white; */
+
     width: 80%;
-    /* border: 1px solid black; */
+
     height: auto;
 }
 
 .light-text {
     font-size: 50px;
     font-weight: 5000;
-
-
-    /* color: rgb(150, 148, 148); */
 }
 
 .center-container h1 {
@@ -203,9 +184,9 @@ input:focus {
     font-size: 1rem;
 }
 
-.container1-css {}
 
-/* CSS */
+
+
 .button-3 {
     appearance: none;
     background-color: #2ea44f;

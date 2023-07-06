@@ -39,6 +39,7 @@ button {
     background-color: white;
     border: 1px solid black;
     border-radius: 5px;
+    color: #423A4C;
 }
 
 button:hover {
@@ -46,4 +47,5 @@ button:hover {
     color: white;
     transition: .5s;
     cursor: pointer;
+    
 }

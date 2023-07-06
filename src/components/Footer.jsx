@@ -35,6 +35,12 @@ const Footer = () => {
         <div className="container">
           <p>&copy; {new Date().getFullYear()} Your Website. All rights reserved.</p>
         </div>
+        <section className="waveInMaking">
+          <div className="wave wave1"></div>
+          <div className="wave wave2"></div>
+          <div className="wave wave3"></div>
+          <div className="wave wave4"></div>
+        </section>
       </div>
     </footer>
   );

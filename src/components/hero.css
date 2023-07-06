@@ -286,27 +286,7 @@ transform-origin: center bottom;
     box-sizing: border;
 
 }
-/* .background{
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
 
-.background ::before{
-    content: '';
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center ;
-    position : absolute;
-    top:0;
-    left:0;
-    bottom: 0;
-    right: 0;
-    opacity: 0.35;
-
-} */
 .Awesome3 {
   width: 200vh;
   display: flex;
@@ -323,9 +303,9 @@ transform-origin: center bottom;
 }
 
 .heading p{
-  /* font-size: 50px; */
-  /* font-weight: 800; */
+ 
   border-bottom: 3px solid black;
+ color: #423A4C;
 }
 
 
@@ -456,97 +436,8 @@ transform-origin: center bottom;
       width: 100px; /* Adjust the width as desired */
       height: auto;
     }
-/* @keyframes bounce {
-from,
-20%,
-53%,
-to {
-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-transform: translate3d(0, 0, 0);
-}
 
-40%,
-43% {
-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-transform: translate3d(0, -30px, 0) scaleY(1.1);
-}
-
-70% {
-animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
-transform: translate3d(0, -15px, 0) scaleY(1.05);
-}
-
-80% {
-transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-transform: translate3d(0, 0, 0) scaleY(0.95);
-}
-
-90% {
-transform: translate3d(0, -4px, 0) scaleY(1.02);
-}
-}
-
-.bounce {
-animation-name: bounce;
-transform-origin: center bottom;
-}
-  
-      .heading1{
-        color: #a76862;
-        
-        position: relative;
-        font-size: 2.5vh;
-      }
-      .interior{
-        color: #443C54;
-        width: 400px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-left: -15px;
-       
-      }
-      img{
-        width: 50%;
-      }
-      .get-started{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 100px;
-        font-size: larger; 
-      }
-      .get-started1{
-        text-align: center;
-       margin-top: -25px;
-       
-      }
-      .buttons{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        
-      }
-      #button1{
-        background-color: #FFA79F;
-        color: #2F1D37;
-        border-radius: 5px;
-      }
-      #button1:hover{
-        background-color: #2F1D37;
-        color: #FFA79F;
-        border-radius: 5px;
-      }
- 
-
-      .review{
-    width: 100%;
-    height: 100vh;
-    padding-top: 80px;
-} */
-
-/* getting started */
-
+/* getting Started */
 .get-started {
   text-align: center;
   margin-top: 50px;
@@ -599,10 +490,26 @@ h1 {
   font-size: 45px;
   text-align: center;
   margin-bottom: 20px;
+  color:  #423A4C;;
 }
 
 h1 span {
-  color: #ff9800;
+ 
+   color: #423A4C;text-shadow:2px 2px 4px rgba(192 , 210, 219, 0.5);
+
+}
+
+.interior h3{
+  color:#423A4C;
+}
+
+.interior p{
+  color: #423A4C;
+}
+
+
+.text-with-glow {
+  animation: shine 1.5s infinite;
 }
 
 .ReviewCont {

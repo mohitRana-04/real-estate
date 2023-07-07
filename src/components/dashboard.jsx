@@ -31,21 +31,27 @@ function Dashboard() {
           );
         })}
       </div> */}
-      {user.map((item) => {
-        return (
-          <>
-            <div className="main">
+      <div className="main">
+        {user.map((item) => {
+          return (
+            <>
               <div className="card">
-                <div className="image">
-                  <img src={item.image} alt="" />
-                </div>
                 <div className="title">{item.name}</div>
+                <center>
+                  <div className="image">
+                    <img src={item.image} alt="" />
+                  </div>
+                </center>
+
                 <div className="des">{item.description}</div>
+                <div className="center-button">
+                  <button className="view-more">View More</button>
+                </div>
               </div>
-            </div>
-          </>
-        );
-      })}
+            </>
+          );
+        })}
+      </div>
       <></>
     </>
   );

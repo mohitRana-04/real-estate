@@ -19,6 +19,7 @@ import "./Styles/AllPost.css";
 
 import { Data } from "./File/Data";
 import { Center, Textarea } from "@mantine/core";
+import Submitted from "./File/Submitted";
 
 library.add(fas);
 
@@ -27,6 +28,7 @@ function AllPost() {
   const [image, setImage] = useState("");
 
   const [data, setData] = useState({});
+  const [check, setCheck] = useState(false);
 
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
@@ -36,7 +38,8 @@ function AllPost() {
   const userCollectionRef = collection(db, "posts");
 
   const handleButton = async () => {
-    alert("Post Update kindly refresh");
+    setCheck(true);
+    // alert("Post Update kindly refresh");
     await addDoc(userCollectionRef, {
       name: name,
       description: description,
@@ -157,6 +160,7 @@ function AllPost() {
                 onChange={(e) => {
                   setFile(e.target.files[0]);
                 }}
+                required
               />
               <br /> <br />
               <input
@@ -193,6 +197,8 @@ function AllPost() {
               <button className="button-3" type="submit">
                 Post
               </button>
+              {check && <Submitted />}
+              {/* <Submitted /> */}
             </form>
           </div>
         </div>

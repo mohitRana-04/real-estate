@@ -1,5 +1,5 @@
 .awards {
-    background-color: #122947;
+    background-color: #423A4C;
     color: #fff;
     text-align: center;
   }
@@ -8,7 +8,8 @@
     flex-direction: column-reverse;
   }
   .awards .heading p {
-    color: #27ae60;
+    color: #FFD59F;
+    font-size: 50px;
   }
   .awards .heading h1 {
     color: #fff;

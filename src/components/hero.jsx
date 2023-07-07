@@ -55,7 +55,7 @@ export function HeroText() {
                 <img src={homeap} alt="logo" />
                 <h3>Home Appraisal</h3>
                 <p>
-                  we understand the significance of accurate home valuations.
+                  We understand the significance of accurate home valuations.
                   Our team of experienced and certified appraisers meticulously
                   assesses various factors that influence the value of your
                   property. From the location and size of your home to its
@@ -68,7 +68,7 @@ export function HeroText() {
                 <h3>Price Negotation</h3>
                 <p>
                   {" "}
-                  we believe in advocating for our clients and ensuring they get
+                  We believe in advocating for our clients and ensuring they get
                   the most out of their real estate investments. Our skilled
                   negotiators have extensive experience in the industry, and we
                   are committed to securing the most favorable terms for you. We
@@ -81,7 +81,7 @@ export function HeroText() {
                 <h3>Paperwork Handling </h3>
                 <p>
                   {" "}
-                  we understand the importance of handling paperwork accurately
+                  We understand the importance of handling paperwork accurately
                   and efficiently. Our experienced team takes care of drafting,
                   reviewing, and submitting all necessary documents, ensuring
                   compliance with regulations and minimizing risks. Trust us to

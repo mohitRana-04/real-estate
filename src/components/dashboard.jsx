@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { db, storage } from "../firebase-config";
 import { collection, getDocs, addDoc } from "firebase/firestore";
-import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import Loading from "../components/Loading";
 import { withAuthenticationRequired } from "@auth0/auth0-react";
 import "../components/Styles/Dashboard.css";

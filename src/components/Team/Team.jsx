@@ -7,10 +7,10 @@ const Team = () => {
   return (
     <>
       <section className='team background'>
-        <div className='container'>
+        <div className='container-xx'>
           <Heading title='Our Featured Agents' subtitle='Discover our handpicked selection of highly experienced and dedicated property agents ready to assist you in finding your dream home. Our featured agents are trusted experts in the real estate industry, equipped with extensive knowledge and a proven track record of successful transactions.' />
 
-          <div className='content mtop grid3'>
+          <div className='contentt mtop grid3'>
             {team.map((val, index) => (
               <div className='box2' key={index}>
                 <button className='btn3'>{val.list} Listings</button>

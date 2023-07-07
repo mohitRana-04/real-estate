@@ -67,6 +67,7 @@
 
 li {
     font-weight: 500;
+    color: black;
 }
 
 .center-container {
@@ -249,4 +250,15 @@ input:focus {
         width: auto;
         border: 0;
     }
+}
+
+h2{
+    color: black;
+}
+
+p{
+    color: rgba(0, 0, 0, 0.555);
+}
+b{
+    color: black;
 }

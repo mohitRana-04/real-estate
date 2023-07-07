@@ -7,7 +7,7 @@ const Featured = () => {
   return (
     <>
       <section className='featured background'>
-        <div className='container'>
+        <div className='container-ff'>
           <Heading title='Featured Property Types' subtitle='Find All Type of Property.' />
           <div className="container-m">
           <FeaturedCard />

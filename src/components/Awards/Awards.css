@@ -2,6 +2,8 @@
     background-color: #423A4C;
     color: #fff;
     text-align: center;
+    width: 100vw;
+    margin-top: 31px;
   }
   .awards .heading {
     display: flex;
@@ -20,7 +22,7 @@
     width: 100px;
     height: 100px;
     line-height: 100px;
-    margin: auto;
+    margin: auto 111px;
     margin-top: 50px;
     background: rgba(255, 255, 255, 0.1);
     border-radius: 4% 50%;
@@ -32,4 +34,10 @@
   }
   .awards p {
     color: grey;
+  }
+
+ 
+  .main-con{
+  
+    width: 100%;
   }

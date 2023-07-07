@@ -2,7 +2,7 @@ import React from "react";
 import { withAuth0 } from "@auth0/auth0-react";
 import { Component } from "react";
 import "./NavbarStyles.css";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import {Link } from "react-router-dom";
 
 
 class Navbar extends Component {

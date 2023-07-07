@@ -121,22 +121,22 @@ function AllPost() {
               <br />
               <ul style={{ fontSize: "20px" }}>
                 <li>
-                  <b style={{ color: "rgb(157, 127, 127)" }}>01.</b>Advertise
+                  <b style={{ color: "black" }}>01.</b>Advertise
                   for free
                 </li>{" "}
                 <br />
                 <li>
-                  <b style={{ color: "rgb(157, 127, 127)" }}>02.</b>get
+                  <b style={{ color: "black" }}>02.</b>get
                   unlimited enqueries
                 </li>{" "}
                 <br />
                 <li>
-                  <b style={{ color: "rgb(157, 127, 127)" }}>03.</b>get
+                  <b style={{ color: "black" }}>03.</b>get
                   shorlisted buyer
                 </li>{" "}
                 <br />
                 <li>
-                  <b style={{ color: "rgb(157, 127, 127)" }}>04.</b>Assistance
+                  <b style={{ color: "black" }}>04.</b>Assistance
                   in coordinating
                 </li>
                 <br />
@@ -249,7 +249,6 @@ function AllPost() {
           </div>
           <div className="additional-benifit">
             <h3 className="cotainer1-css">
-              <b style={{ fontWeight: 100 }}>Additional Benifits</b>
               <h1 style={{ fontSize: "50px" }}>
                 Everything on Realestate does to post{" "}
               </h1>

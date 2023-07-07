@@ -6,7 +6,7 @@ const Mapp = () => {
     <div class="map">
         <div class="address_bx">
             <div class="location_bx">                
-                <h4><FaMapMarkerAlt/>Uttarakhand</h4>
+                <h4><FaMapMarkerAlt/>Find Your Dream Location</h4>
             </div>
             <i class="bi bi-fullscreen-exit"></i>
         </div>

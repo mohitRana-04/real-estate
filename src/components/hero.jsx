@@ -113,7 +113,7 @@ export function HeroText() {
             <div className="review_card">
               <div className="card_top">
                 <div className="profile_image">
-                  <img src={mandp3} />
+                  <img src={mandp3} alt="/" />
                 </div>
                 <div className="profileNameArea">
                   <div className="name">
@@ -141,7 +141,7 @@ export function HeroText() {
             <div className="review_card">
               <div className="card_top">
                 <div className="profile_image">
-                  <img src={girldp1} />
+                  <img src={girldp1} alt="/" />
                 </div>
                 <div className="profileNameArea">
                   <div className="name">
@@ -169,7 +169,7 @@ export function HeroText() {
             <div className="review_card">
               <div className="card_top">
                 <div className="profile_image">
-                  <img src={mandp1} />
+                  <img src={mandp1} alt="/" />
                 </div>
                 <div className="profileNameArea">
                   <div className="name">
@@ -195,7 +195,7 @@ export function HeroText() {
             <div className="review_card">
               <div className="card_top">
                 <div className="profile_image">
-                  <img src={girldp3} />
+                  <img src={girldp3} alt="/" />
                 </div>
                 <div className="profileNameArea">
                   <div className="name">
@@ -219,7 +219,7 @@ export function HeroText() {
             <div className="review_card">
               <div className="card_top">
                 <div className="profile_image">
-                  <img src={mandp2} />
+                  <img src={mandp2} alt="/"/>
                 </div>
                 <div className="profileNameArea">
                   <div className="name">
@@ -243,7 +243,7 @@ export function HeroText() {
             <div className="review_card">
               <div className="card_top">
                 <div className="profile_image">
-                  <img src={girldp2} />
+                  <img src={girldp2} alt="/"/>
                 </div>
                 <div className="profileNameArea">
                   <div className="name">

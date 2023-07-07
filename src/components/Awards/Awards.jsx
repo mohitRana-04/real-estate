@@ -6,8 +6,8 @@ import "./Awards.css"
 const Awards = () => {
   return (
     <>
-      <section className='awards padding'>
-        <div className='container'>
+      <div className='awards padding'>
+        <div className='container-a'>
           <Heading title='Over 1,24,000+ Happy User Bieng With Us Still They Love Our Services' subtitle='Our Awards' />
 
           <div className='content grid4 mtop'>
@@ -22,7 +22,8 @@ const Awards = () => {
             ))}
           </div>
         </div>
-      </section>
+        
+      </div>
     </>
   )
 }
